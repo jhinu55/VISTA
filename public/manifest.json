@@ -1,0 +1,41 @@
+{
+  "name": "VISTA Vehicle Service",
+  "short_name": "VISTA",
+  "description": "Your trusted vehicle service companion",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#4A2B83",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Book Service",
+      "short_name": "Book",
+      "description": "Book a new service appointment",
+      "url": "/client/appointments/book",
+      "icons": [{ "src": "/icons/book-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "My Vehicles",
+      "short_name": "Vehicles",
+      "description": "View your vehicles",
+      "url": "/client/vehicles",
+      "icons": [{ "src": "/icons/vehicle-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
