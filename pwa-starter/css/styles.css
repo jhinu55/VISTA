@@ -1,0 +1,358 @@
+/* PWA Starter - Modern CSS Styles */
+
+:root {
+  --primary-color: #1a202c;
+  --secondary-color: #2d3748;
+  --accent-color: #4299e1;
+  --success-color: #48bb78;
+  --warning-color: #ed8936;
+  --error-color: #f56565;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --text-light: #718096;
+  --background: #ffffff;
+  --surface: #f7fafc;
+  --border: #e2e8f0;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --border-radius: 8px;
+  --border-radius-lg: 12px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #f7fafc;
+    --text-secondary: #e2e8f0;
+    --text-light: #a0aec0;
+    --background: #1a202c;
+    --surface: #2d3748;
+    --border: #4a5568;
+  }
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Cards */
+.feature-card,
+.status-card,
+.demo-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover,
+.status-card:hover,
+.demo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-card h2,
+.status-card h2,
+.demo-card h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Feature list */
+.feature-card ul {
+  list-style: none;
+}
+
+.feature-card li {
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s ease;
+}
+
+.feature-card li:last-child {
+  border-bottom: none;
+}
+
+.feature-card li:hover {
+  color: var(--accent-color);
+}
+
+/* Status indicators */
+#pwa-status {
+  margin-bottom: 1.5rem;
+}
+
+#pwa-status p {
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+#online-status {
+  background-color: rgba(72, 187, 120, 0.1);
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
+}
+
+#sw-status {
+  background-color: rgba(66, 153, 225, 0.1);
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+#install-status {
+  background-color: rgba(237, 137, 54, 0.1);
+  border: 1px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, var(--accent-color), #3182ce);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow);
+  margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #3182ce, var(--accent-color));
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#install-button {
+  background: linear-gradient(135deg, var(--success-color), #38a169);
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+#install-button:hover {
+  background: linear-gradient(135deg, #38a169, var(--success-color));
+}
+
+/* Demo output */
+#demo-output {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  min-height: 100px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-light);
+  margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header p {
+    font-size: 1rem;
+  }
+  
+  main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card,
+  .status-card,
+  .demo-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  
+  header {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .feature-card,
+  .status-card,
+  .demo-card {
+    padding: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Success/Error states */
+.success {
+  background-color: rgba(72, 187, 120, 0.1) !important;
+  border-color: var(--success-color) !important;
+  color: var(--success-color) !important;
+}
+
+.error {
+  background-color: rgba(245, 101, 101, 0.1) !important;
+  border-color: var(--error-color) !important;
+  color: var(--error-color) !important;
+}
+
+/* Install prompt styles */
+.install-prompt {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-lg);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  max-width: 90vw;
+  text-align: center;
+}
+
+.install-prompt button {
+  margin-top: 0.5rem;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for better accessibility */
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --shadow: 0 0 0 1px var(--border);
+    --shadow-lg: 0 0 0 2px var(--border);
+  }
+}

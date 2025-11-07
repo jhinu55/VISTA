@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Starter</title>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme color for browser UI -->
+    <meta name="theme-color" content="#1a202c">
+    
+    <!-- iOS specific meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PWA Starter">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    
+    <!-- Windows tile icon -->
+    <meta name="msapplication-TileImage" content="icons/icon-192.png">
+    <meta name="msapplication-TileColor" content="#1a202c">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 PWA Starter</h1>
+            <p>A Progressive Web App Template</p>
+        </header>
+        
+        <main>
+            <section class="feature-card">
+                <h2>✨ Features</h2>
+                <ul>
+                    <li>📱 Installable on devices</li>
+                    <li>🔄 Works offline</li>
+                    <li>⚡ Fast loading</li>
+                    <li>🎨 Responsive design</li>
+                </ul>
+            </section>
+            
+            <section class="status-card">
+                <h2>📊 PWA Status</h2>
+                <div id="pwa-status">
+                    <p id="online-status">🟢 Online</p>
+                    <p id="sw-status">⏳ Service Worker: Loading...</p>
+                    <p id="install-status">📲 Install: Checking...</p>
+                </div>
+                
+                <button id="install-button" style="display: none;">
+                    📱 Install App
+                </button>
+            </section>
+            
+            <section class="demo-card">
+                <h2>🧪 Demo Features</h2>
+                <button id="cache-test">Test Offline Capability</button>
+                <button id="notification-test">Request Notifications</button>
+                <div id="demo-output"></div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 PWA Starter Template</p>
+        </footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
