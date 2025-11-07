@@ -130,7 +130,7 @@ const BookServicePage = () => {
         return (
           <div className="space-y-4">
             <h2 className="text-lg font-semibold mb-4">Select Time Slot</h2>
-            <p className="text-sm text-gray-600 mb-4">AI recommended slots based on shop availability and your vehicle's needs:</p>
+            <p className="text-sm text-gray-600 mb-4">AI recommended slots based on shop availability and your vehicle&apos;s needs:</p>
             {availableSlots.map((slot, index) => (
               <button
                 key={index}

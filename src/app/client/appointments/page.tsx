@@ -12,7 +12,19 @@ const AppointmentsPage = () => {
   const currentDate = new Date();
 
   // Sample upcoming appointments data
-  const upcomingAppointments = [
+  const upcomingAppointments: Array<{
+    id: number;
+    date: string;
+    time: string;
+    location: string;
+    service: string;
+    status: 'scheduled' | 'completed' | 'cancelled';
+    vehicle: {
+      make: string;
+      model: string;
+      year: number;
+    };
+  }> = [
     {
       id: 1,
       date: 'WED, DEC 1',

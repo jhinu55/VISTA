@@ -1,6 +1,6 @@
 'use client';
 
-import { CarIcon } from '@heroicons/react/24/outline';
+import { TruckIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 interface VehicleCardProps {
@@ -27,7 +27,7 @@ export default function VehicleCard({
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <CarIcon className="w-6 h-6 text-gray-400" />
+          <TruckIcon className="w-6 h-6 text-gray-400" />
           <div>
             <h3 className="font-medium text-gray-900 dark:text-white">
               {make} {model}
