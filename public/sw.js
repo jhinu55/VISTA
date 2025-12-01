@@ -1,5 +1,5 @@
 // Service Worker Version
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `vista-${CACHE_VERSION}`;
 
 // Assets to cache
@@ -9,6 +9,7 @@ const STATIC_ASSETS = [
   '/client/vehicles',
   '/client/appointments',
   '/manifest.json',
+  '/favicon.ico',
   '/icons/icon-192x192.png',
   '/icons/icon-512x512.png',
 ];
@@ -39,6 +40,16 @@ self.addEventListener('activate', (event) => {
 
 // Fetch Event Handler
 self.addEventListener('fetch', (event) => {
+  // Skip cross-origin requests
+  if (!event.request.url.startsWith(self.location.origin)) {
+    return;
+  }
+
+  // Skip chrome-extension and other non-http(s) schemes
+  if (!event.request.url.startsWith('http')) {
+    return;
+  }
+
   // API calls - Network first, fallback to cache
   if (event.request.url.includes('/api/')) {
     event.respondWith(
@@ -59,21 +70,38 @@ self.addEventListener('fetch', (event) => {
 
   // Static assets - Cache first, fallback to network
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) {
-        return response;
-      }
-      return fetch(event.request).then((response) => {
-        if (!response || response.status !== 200 || response.type !== 'basic') {
+    caches.match(event.request)
+      .then((response) => {
+        if (response) {
           return response;
         }
-        const clonedResponse = response.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, clonedResponse);
-        });
-        return response;
-      });
-    })
+        return fetch(event.request)
+          .then((response) => {
+            // Don't cache non-successful responses
+            if (!response || response.status !== 200) {
+              return response;
+            }
+            
+            // Don't cache opaque responses
+            if (response.type !== 'basic' && response.type !== 'cors') {
+              return response;
+            }
+
+            const clonedResponse = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, clonedResponse);
+            });
+            return response;
+          })
+          .catch((error) => {
+            console.log('Fetch failed; returning offline page instead.', error);
+            // Return a fallback for navigation requests
+            if (event.request.mode === 'navigate') {
+              return caches.match('/');
+            }
+            throw error;
+          });
+      })
   );
 });
 

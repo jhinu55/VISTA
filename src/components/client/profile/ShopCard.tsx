@@ -21,11 +21,11 @@ export default function ShopCard({
   onBookService,
 }: ShopCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+    <div className="bg-white rounded-xl shadow-sm p-4">
       <div className="flex items-start justify-between">
         <div className="space-y-1">
           <div className="flex items-center gap-2">
-            <h3 className="font-medium text-gray-900 dark:text-white">{name}</h3>
+            <h3 className="font-medium text-gray-900">{name}</h3>
             <button onClick={onToggleFavorite}>
               {isFavorite ? (
                 <StarIconSolid className="w-5 h-5 text-[#4A2B83]" />
@@ -34,8 +34,8 @@ export default function ShopCard({
               )}
             </button>
           </div>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{address}</p>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{phone}</p>
+          <p className="text-sm text-gray-600">{address}</p>
+          <p className="text-sm text-gray-600">{phone}</p>
         </div>
         <button
           onClick={onBookService}

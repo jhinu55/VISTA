@@ -21,7 +21,7 @@ export default function ProfileCard({
   onEditProfile,
 }: ProfileCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 space-y-4">
+    <div className="bg-white rounded-2xl shadow-sm p-6 space-y-4">
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-4">
           {profileImage ? (
@@ -36,9 +36,9 @@ export default function ProfileCard({
             <UserCircleIcon className="w-16 h-16 text-gray-400" />
           )}
           <div>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{name}</h2>
-            <p className="text-sm text-gray-600 dark:text-gray-300">{email}</p>
-            {phone && <p className="text-sm text-gray-600 dark:text-gray-300">{phone}</p>}
+            <h2 className="text-xl font-semibold text-gray-900">{name}</h2>
+            <p className="text-sm text-gray-600">{email}</p>
+            {phone && <p className="text-sm text-gray-600">{phone}</p>}
           </div>
         </div>
         <button
@@ -49,8 +49,8 @@ export default function ProfileCard({
         </button>
       </div>
       {address && (
-        <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
-          <p className="text-sm text-gray-600 dark:text-gray-300">{address}</p>
+        <div className="pt-4 border-t border-gray-200">
+          <p className="text-sm text-gray-600">{address}</p>
         </div>
       )}
     </div>

@@ -5,6 +5,7 @@ import ProfileCard from '@/components/client/profile/ProfileCard';
 import VehicleCard from '@/components/client/profile/VehicleCard';
 import ShopCard from '@/components/client/profile/ShopCard';
 import SettingsPanel from '@/components/client/profile/SettingsPanel';
+import SettingsMenu from '@/components/common/SettingsMenu';
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
@@ -62,13 +63,16 @@ export default function ProfilePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-[#F0F1F2]">
       {/* Header */}
-      <header className="bg-white dark:bg-gray-800 p-4 flex items-center gap-4 shadow-sm">
-        <Link href="/client/dashboard">
-          <ChevronLeftIcon className="w-6 h-6 text-gray-600 dark:text-gray-300" />
-        </Link>
-        <h1 className="text-xl font-semibold text-gray-900 dark:text-white">Profile</h1>
+      <header className="bg-white p-4 flex items-center justify-between shadow-sm">
+        <div className="flex items-center gap-4">
+          <Link href="/client/dashboard">
+            <ChevronLeftIcon className="w-6 h-6 text-gray-600" />
+          </Link>
+          <h1 className="text-xl font-semibold text-gray-900">Profile</h1>
+        </div>
+        <SettingsMenu />
       </header>
 
       {/* Content */}
@@ -83,7 +87,7 @@ export default function ProfilePage() {
         />
 
         <section>
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">
             Your Vehicles
           </h2>
           <div className="space-y-4">
@@ -102,7 +106,7 @@ export default function ProfilePage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">
             Favorite Repair Shops
           </h2>
           <div className="space-y-4">
@@ -125,7 +129,7 @@ export default function ProfilePage() {
         </section>
 
         <section>
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">
             Settings
           </h2>
           <SettingsPanel

@@ -23,16 +23,16 @@ export default function VehicleCard({
   return (
     <Link
       href={`/client/vehicles/${vehicleId}`}
-      className="block bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4 hover:shadow-md transition-shadow"
+      className="block bg-white rounded-xl shadow-sm p-4 hover:shadow-md transition-shadow"
     >
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <TruckIcon className="w-6 h-6 text-gray-400" />
           <div>
-            <h3 className="font-medium text-gray-900 dark:text-white">
+            <h3 className="font-medium text-gray-900">
               {make} {model}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="text-sm text-gray-600">
               {year} • {mileage}
             </p>
           </div>

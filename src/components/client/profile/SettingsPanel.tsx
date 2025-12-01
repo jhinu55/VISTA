@@ -24,16 +24,16 @@ export default function SettingsPanel({
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md divide-y divide-gray-200 dark:divide-gray-700">
+    <div className="bg-white rounded-2xl shadow-sm divide-y divide-gray-200">
       <div className="p-6">
-        <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
+        <h3 className="text-lg font-medium text-gray-900 mb-4">
           Notification Preferences
         </h3>
         <div className="space-y-4">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-gray-900 dark:text-white">Service Reminders</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
+              <p className="text-gray-900 font-medium">Service Reminders</p>
+              <p className="text-sm text-gray-600">
                 Get notified about upcoming services
               </p>
             </div>
@@ -53,8 +53,8 @@ export default function SettingsPanel({
           </div>
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-gray-900 dark:text-white">Urgent Alerts</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
+              <p className="text-gray-900 font-medium">Urgent Alerts</p>
+              <p className="text-sm text-gray-600">
                 Important updates about your vehicle
               </p>
             </div>
@@ -78,8 +78,8 @@ export default function SettingsPanel({
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-gray-900 dark:text-white">Payment Options</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="text-gray-900 font-medium">Payment Options</p>
+            <p className="text-sm text-gray-600">
               Enable online payments
             </p>
           </div>
@@ -102,8 +102,8 @@ export default function SettingsPanel({
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-gray-900 dark:text-white">Dark Mode</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="text-gray-900 font-medium">Dark Mode</p>
+            <p className="text-sm text-gray-600">
               Switch between light and dark themes
             </p>
           </div>
