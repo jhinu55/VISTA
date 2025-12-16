@@ -132,7 +132,7 @@ export default function SchedulePage() {
       <AppLayout>
         <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-8">
           <div className="flex items-center justify-center h-64">
-            <div className="animate-spin rounded-full h-10 w-10 sm:h-12 sm:w-12 border-b-2 border-purple-600"></div>
+            <div className="animate-spin rounded-full h-10 w-10 sm:h-12 sm:w-12 border-b-2 border-navy-800"></div>
           </div>
         </div>
       </AppLayout>
@@ -164,7 +164,7 @@ export default function SchedulePage() {
 
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {/* Booking Form */}
-          <div className="bg-white border border-purple-100 rounded-xl p-4 sm:p-5 md:p-6">
+          <div className="bg-white border border-navy-100 rounded-xl p-4 sm:p-5 md:p-6">
             <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center">
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               New Appointment
@@ -197,7 +197,7 @@ export default function SchedulePage() {
                 <select
                   value={serviceType}
                   onChange={(e) => setServiceType(e.target.value as any)}
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-500"
                   required
                 >
                   <option value="Routine Maintenance">
@@ -219,7 +219,7 @@ export default function SchedulePage() {
                     setSelectedDate(e.target.value);
                     setSelectedTime("");
                   }}
-                  className="w-full px-3 sm:px-4 py-2.5 sm:py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-500"
                   required
                 >
                   <option value="">Choose a date...</option>
@@ -244,8 +244,8 @@ export default function SchedulePage() {
                         onClick={() => setSelectedTime(slot.time)}
                         className={`px-2 sm:px-3 py-2 rounded-lg border text-xs sm:text-sm font-medium transition-colors ${
                           selectedTime === slot.time
-                            ? "bg-purple-600 text-white border-purple-600"
-                            : "bg-white text-gray-700 border-gray-300 hover:border-purple-500 active:bg-purple-50"
+                            ? "bg-navy-800 text-white border-navy-800"
+                            : "bg-white text-gray-700 border-gray-300 hover:border-navy-500 active:bg-navy-50"
                         }`}
                       >
                         {slot.time}
@@ -268,14 +268,14 @@ export default function SchedulePage() {
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
                   rows={3}
-                  className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-500"
                   placeholder="Any specific concerns or requests..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-purple-600 text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-purple-700 active:bg-purple-800 transition-colors"
+                className="w-full bg-navy-800 text-white py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-navy-900 active:bg-navy-950 transition-colors"
               >
                 Schedule Appointment
               </button>

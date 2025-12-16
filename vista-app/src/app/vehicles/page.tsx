@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import AppLayout from "@/components/AppLayout";
 import VehicleCard from "@/components/VehicleCard";
 import { Prediction, Vehicle } from "@/types";
-import { Search, Filter, RefreshCw, Clock } from "lucide-react";
+import { Search, Filter } from "lucide-react";
 
 export default function VehiclesPage() {
   const [predictions, setPredictions] = useState<Prediction[]>([]);
@@ -47,12 +47,6 @@ export default function VehiclesPage() {
     }
 
     fetchData();
-
-    const interval = setInterval(() => {
-      fetchData(true);
-    }, 30000);
-
-    return () => clearInterval(interval);
   }, []);
 
   const getVehicleStatus = (vehicle: Vehicle) => {
@@ -66,8 +60,8 @@ export default function VehiclesPage() {
     const hasWarning = vehiclePredictions.some((p) => p.severity === "WARNING");
 
     if (hasCritical) return "critical";
-    if (hasHigh) return "warning";
-    if (hasWarning) return "attention";
+    if (hasHigh) return "attention";
+    if (hasWarning) return "warning";
     return "healthy";
   };
 
@@ -89,7 +83,7 @@ export default function VehiclesPage() {
       <AppLayout>
         <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-800"></div>
           </div>
         </div>
       </AppLayout>
@@ -160,30 +154,30 @@ export default function VehiclesPage() {
 
         {/* Summary Stats */}
         <div className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-          <div className="bg-green-50 border border-green-200 rounded-lg p-3 sm:p-4">
-            <p className="text-xs sm:text-sm text-green-600 mb-1">Healthy</p>
-            <p className="text-xl sm:text-2xl font-bold text-green-700">
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 sm:p-4">
+            <p className="text-xs sm:text-sm text-purple-700 mb-1">Healthy</p>
+            <p className="text-xl sm:text-2xl font-bold text-purple-800">
               {vehicles.filter((v) => getVehicleStatus(v) === "healthy").length}
             </p>
           </div>
           <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 sm:p-4">
-            <p className="text-xs sm:text-sm text-purple-600 mb-1">Attention</p>
-            <p className="text-xl sm:text-2xl font-bold text-purple-700">
+            <p className="text-xs sm:text-sm text-purple-700 mb-1">Attention</p>
+            <p className="text-xl sm:text-2xl font-bold text-purple-800">
               {
                 vehicles.filter((v) => getVehicleStatus(v) === "attention")
                   .length
               }
             </p>
           </div>
-          <div className="bg-orange-50 border border-orange-200 rounded-lg p-3 sm:p-4">
-            <p className="text-xs sm:text-sm text-orange-600 mb-1">Warning</p>
-            <p className="text-xl sm:text-2xl font-bold text-orange-700">
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 sm:p-4">
+            <p className="text-xs sm:text-sm text-purple-700 mb-1">Warning</p>
+            <p className="text-xl sm:text-2xl font-bold text-purple-800">
               {vehicles.filter((v) => getVehicleStatus(v) === "warning").length}
             </p>
           </div>
-          <div className="bg-red-50 border border-red-200 rounded-lg p-3 sm:p-4">
-            <p className="text-xs sm:text-sm text-red-600 mb-1">Critical</p>
-            <p className="text-xl sm:text-2xl font-bold text-red-700">
+          <div className="bg-purple-50 border border-purple-200 rounded-lg p-3 sm:p-4">
+            <p className="text-xs sm:text-sm text-purple-700 mb-1">Critical</p>
+            <p className="text-xl sm:text-2xl font-bold text-purple-800">
               {
                 vehicles.filter((v) => getVehicleStatus(v) === "critical")
                   .length

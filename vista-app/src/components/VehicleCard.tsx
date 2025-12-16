@@ -1,7 +1,11 @@
 "use client";
 
 import { Vehicle, Prediction } from "@/types";
-import { calculateVehicleHealth, getHealthStatus } from "@/lib/utils";
+import {
+  calculateVehicleHealth,
+  generateIssueMessages,
+  getHealthStatus,
+} from "@/lib/utils";
 import { Car, Activity, Fuel } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -15,9 +19,20 @@ export default function VehicleCard({
   predictions,
 }: VehicleCardProps) {
   const router = useRouter();
+
   const vehiclePredictions = predictions.filter(
     (p) => p.device_id === vehicle.deviceId
   );
+
+  const latestPrediction = vehiclePredictions
+    .slice()
+    .sort(
+      (a, b) =>
+        new Date(b.start_time).getTime() - new Date(a.start_time).getTime()
+    )[0];
+  const latestIssues = latestPrediction
+    ? generateIssueMessages(latestPrediction).slice(0, 2)
+    : [];
   const health = calculateVehicleHealth(vehiclePredictions);
   const status = getHealthStatus(health);
 
@@ -49,7 +64,7 @@ export default function VehicleCard({
     >
       <div className="flex items-start justify-between mb-3 sm:mb-4">
         <div className="flex items-start gap-2 sm:gap-3">
-          <div className="bg-gradient-to-br from-purple-600 to-indigo-600 rounded-lg p-2 sm:p-2.5 md:p-3 flex-shrink-0">
+          <div className="bg-purple-800 rounded-lg p-2 sm:p-2.5 md:p-3 flex-shrink-0">
             <Car className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" />
           </div>
           <div>
@@ -118,6 +133,27 @@ export default function VehicleCard({
               {vehiclePredictions.length} active alert
               {vehiclePredictions.length !== 1 ? "s" : ""}
             </p>
+
+            {latestIssues.length > 0 && (
+              <div className="mt-2 space-y-1">
+                {latestIssues.map((issue, idx) => (
+                  <p key={idx} className="text-xs text-gray-700 line-clamp-1">
+                    • {issue}
+                  </p>
+                ))}
+
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    router.push("/schedule");
+                  }}
+                  className="mt-2 text-xs font-semibold text-purple-800 hover:text-purple-900"
+                >
+                  Schedule service →
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>

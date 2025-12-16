@@ -3,10 +3,10 @@ import { sensorThresholds, patternDescriptions } from './mockData';
 
 export function getSeverityColor(severity: SeverityLevel): string {
   const colors = {
-    INFO: 'bg-blue-100 text-blue-800 border-blue-200',
-    WARNING: 'bg-yellow-100 text-yellow-800 border-yellow-200',
-    HIGH: 'bg-orange-100 text-orange-800 border-orange-200',
-    CRITICAL: 'bg-red-100 text-red-800 border-red-200'
+    INFO: 'bg-purple-100 text-purple-800 border-purple-200',
+    WARNING: 'bg-purple-100 text-purple-800 border-purple-200',
+    HIGH: 'bg-purple-100 text-purple-800 border-purple-200',
+    CRITICAL: 'bg-purple-100 text-purple-800 border-purple-200'
   };
   return colors[severity];
 }

@@ -2,6 +2,8 @@
 
 import AppLayout from "@/components/AppLayout";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Prediction } from "@/types";
 import {
   Car,
   AlertTriangle,
@@ -11,10 +13,54 @@ import {
   Wrench,
   Activity,
   Zap,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Dashboard() {
   const router = useRouter();
+  const [alertCounts, setAlertCounts] = useState({
+    critical: 0,
+    high: 0,
+    warning: 0,
+    total: 0,
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchAlerts() {
+      try {
+        const res = await fetch("/api/predictions");
+        const data = await res.json();
+        const predictions = Array.isArray(data?.predictions)
+          ? data.predictions
+          : Array.isArray(data)
+          ? data
+          : [];
+
+        const critical = predictions.filter(
+          (p: Prediction) => p.severity === "CRITICAL"
+        ).length;
+        const high = predictions.filter(
+          (p: Prediction) => p.severity === "HIGH"
+        ).length;
+        const warning = predictions.filter(
+          (p: Prediction) => p.severity === "WARNING"
+        ).length;
+
+        setAlertCounts({
+          critical,
+          high,
+          warning,
+          total: predictions.length,
+        });
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching alerts:", error);
+        setLoading(false);
+      }
+    }
+    fetchAlerts();
+  }, []);
 
   // Featured vehicle data
   const featuredVehicles = [
@@ -66,7 +112,7 @@ export default function Dashboard() {
             <h2 className="text-xl font-bold text-gray-900">
               Featured Vehicles
             </h2>
-            <button className="text-sm font-medium text-navy-800 hover:text-navy-900 flex items-center gap-1">
+            <button className="text-sm font-medium text-purple-800 hover:text-purple-900 flex items-center gap-1">
               View All
               <svg
                 className="w-4 h-4"
@@ -89,7 +135,7 @@ export default function Dashboard() {
               return (
                 <div
                   key={vehicle.id}
-                  className="group bg-white border border-gray-200 rounded-2xl p-3 hover:shadow-lg hover:border-navy-300 hover:bg-navy-50 transition-all cursor-pointer"
+                  className="group bg-white border border-gray-200 rounded-2xl p-3 hover:shadow-lg hover:border-purple-300 hover:bg-purple-50 transition-all cursor-pointer"
                   onClick={() => router.push(`/vehicles/${vehicle.id}`)}
                 >
                   {/* Car Image - Square */}
@@ -104,7 +150,7 @@ export default function Dashboard() {
                   {/* Vehicle Info */}
                   <div className="mb-3">
                     <div>
-                      <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-navy-800 transition-colors">
+                      <h3 className="text-base font-bold text-gray-900 mb-1 group-hover:text-purple-800 transition-colors">
                         {vehicle.name}
                       </h3>
                       <p className="text-xs text-gray-500 mb-2">
@@ -139,9 +185,9 @@ export default function Dashboard() {
 
                   {/* Metrics */}
                   <div className="grid grid-cols-2 gap-2">
-                    <div className="bg-navy-50 rounded-lg p-2 group-hover:bg-navy-100 transition-colors">
+                    <div className="bg-purple-50 rounded-lg p-2 group-hover:bg-purple-100 transition-colors">
                       <div className="flex items-center gap-1.5 mb-1">
-                        <Activity className="w-3 h-3 text-navy-600" />
+                        <Activity className="w-3 h-3 text-purple-700" />
                         <p className="text-[10px] font-medium text-gray-600">
                           Speed
                         </p>
@@ -150,9 +196,9 @@ export default function Dashboard() {
                         {vehicle.speed}
                       </p>
                     </div>
-                    <div className="bg-navy-50 rounded-lg p-2 group-hover:bg-navy-100 transition-colors">
+                    <div className="bg-purple-50 rounded-lg p-2 group-hover:bg-purple-100 transition-colors">
                       <div className="flex items-center gap-1.5 mb-1">
-                        <Zap className="w-3 h-3 text-navy-600" />
+                        <Zap className="w-3 h-3 text-purple-700" />
                         <p className="text-[10px] font-medium text-gray-600">
                           Mileage
                         </p>
@@ -165,6 +211,58 @@ export default function Dashboard() {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* Active Alerts Summary */}
+        <div className="mb-8">
+          <div className="bg-white border border-purple-100 rounded-xl p-4 shadow-sm">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="bg-purple-800 rounded-lg p-2.5">
+                  <AlertTriangle className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h2 className="text-base font-bold text-gray-900">
+                    System Alerts
+                  </h2>
+                  {loading ? (
+                    <p className="text-sm text-gray-600">Loading...</p>
+                  ) : alertCounts.total === 0 ? (
+                    <p className="text-sm text-green-600 font-medium">
+                      All systems normal
+                    </p>
+                  ) : (
+                    <div className="flex items-center gap-3 mt-1">
+                      {alertCounts.critical > 0 && (
+                        <span className="text-xs text-red-600 font-semibold">
+                          {alertCounts.critical} Critical
+                        </span>
+                      )}
+                      {alertCounts.high > 0 && (
+                        <span className="text-xs text-orange-600 font-semibold">
+                          {alertCounts.high} High
+                        </span>
+                      )}
+                      {alertCounts.warning > 0 && (
+                        <span className="text-xs text-yellow-600 font-semibold">
+                          {alertCounts.warning} Warning
+                        </span>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+              {!loading && alertCounts.total > 0 && (
+                <button
+                  onClick={() => router.push("/vehicles")}
+                  className="flex items-center gap-1.5 px-4 py-2 bg-purple-800 text-white text-sm font-medium rounded-lg hover:bg-purple-900 transition-colors"
+                >
+                  View Details
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -183,9 +281,9 @@ export default function Dashboard() {
                   {healthyCount} vehicles
                 </span>
               </div>
-              <div className="w-full h-4 bg-navy-100 rounded-full overflow-hidden shadow-inner">
+              <div className="w-full h-4 bg-purple-100 rounded-full overflow-hidden shadow-inner">
                 <div
-                  className="h-full bg-gradient-to-r from-navy-700 to-navy-800 transition-all duration-500 rounded-full"
+                  className="h-full bg-gradient-to-r from-purple-700 to-purple-800 transition-all duration-500 rounded-full"
                   style={{ width: `${healthPercentage}%` }}
                 />
               </div>
@@ -199,9 +297,9 @@ export default function Dashboard() {
                   {attentionCount} vehicles
                 </span>
               </div>
-              <div className="w-full h-4 bg-navy-100 rounded-full overflow-hidden shadow-inner">
+              <div className="w-full h-4 bg-purple-100 rounded-full overflow-hidden shadow-inner">
                 <div
-                  className="h-full bg-gradient-to-r from-navy-600 to-navy-700 transition-all duration-500 rounded-full"
+                  className="h-full bg-gradient-to-r from-purple-600 to-purple-700 transition-all duration-500 rounded-full"
                   style={{
                     width: `${Math.round(
                       (attentionCount / totalVehicles) * 100

@@ -48,11 +48,19 @@ export default function VehicleDetailPage() {
         const predictionsData = await predictionsRes.json();
         const appointmentsData = await appointmentsRes.json();
 
+        const normalizedPredictions = Array.isArray(
+          predictionsData?.predictions
+        )
+          ? predictionsData.predictions
+          : Array.isArray(predictionsData)
+          ? predictionsData
+          : [];
+
         const foundVehicle = vehiclesData.find(
           (v: Vehicle) => v.id === vehicleId
         );
         setVehicle(foundVehicle || null);
-        setPredictions(predictionsData);
+        setPredictions(normalizedPredictions);
         setAppointments(appointmentsData);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -69,7 +77,7 @@ export default function VehicleDetailPage() {
       <AppLayout>
         <div className="container mx-auto px-4 py-8">
           <div className="flex items-center justify-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-800"></div>
           </div>
         </div>
       </AppLayout>
@@ -102,6 +110,33 @@ export default function VehicleDetailPage() {
       (a, b) =>
         new Date(b.start_time).getTime() - new Date(a.start_time).getTime()
     );
+
+  const latestPrediction = vehiclePredictions[0];
+  const latestIssues = latestPrediction
+    ? generateIssueMessages(latestPrediction)
+    : [];
+
+  const buildServiceSuggestion = (prediction: Prediction) => {
+    const factors = prediction.factors || [];
+
+    if (factors.includes("cTemp")) {
+      return "Inspect cooling system (coolant level, radiator fan, thermostat).";
+    }
+    if (factors.includes("battery")) {
+      return "Check battery/alternator health and clean battery terminals.";
+    }
+    if (factors.includes("maf")) {
+      return "Clean/replace the MAF sensor and inspect the air intake.";
+    }
+    if (factors.includes("rpm")) {
+      return "Inspect idle control/throttle body and run an engine diagnostic.";
+    }
+    if (factors.includes("eLoad")) {
+      return "Inspect intake/exhaust restrictions and check for misfires.";
+    }
+
+    return "Schedule a diagnostic inspection to confirm root cause.";
+  };
 
   const vehicleAppointments = appointments
     .filter((a) => a.vehicleId === vehicleId)
@@ -193,9 +228,9 @@ export default function VehicleDetailPage() {
                 Live Sensor Readings
               </h2>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-blue-50 rounded-lg p-4">
+                <div className="bg-purple-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
-                    <Thermometer className="w-5 h-5 text-blue-600 mr-2" />
+                    <Thermometer className="w-5 h-5 text-purple-700 mr-2" />
                     <span className="text-sm text-gray-600">Coolant Temp</span>
                   </div>
                   <p className="text-2xl font-bold text-gray-900">
@@ -209,9 +244,9 @@ export default function VehicleDetailPage() {
                   </p>
                 </div>
 
-                <div className="bg-green-50 rounded-lg p-4">
+                <div className="bg-purple-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
-                    <Gauge className="w-5 h-5 text-green-600 mr-2" />
+                    <Gauge className="w-5 h-5 text-purple-700 mr-2" />
                     <span className="text-sm text-gray-600">Engine RPM</span>
                   </div>
                   <p className="text-2xl font-bold text-gray-900">
@@ -227,7 +262,7 @@ export default function VehicleDetailPage() {
 
                 <div className="bg-purple-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
-                    <Battery className="w-5 h-5 text-purple-600 mr-2" />
+                    <Battery className="w-5 h-5 text-purple-700 mr-2" />
                     <span className="text-sm text-gray-600">Battery</span>
                   </div>
                   <p className="text-2xl font-bold text-gray-900">
@@ -241,9 +276,9 @@ export default function VehicleDetailPage() {
                   </p>
                 </div>
 
-                <div className="bg-orange-50 rounded-lg p-4">
+                <div className="bg-navy-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
-                    <Wind className="w-5 h-5 text-orange-600 mr-2" />
+                    <Wind className="w-5 h-5 text-navy-600 mr-2" />
                     <span className="text-sm text-gray-600">Air Flow</span>
                   </div>
                   <p className="text-2xl font-bold text-gray-900">
@@ -257,9 +292,9 @@ export default function VehicleDetailPage() {
                   </p>
                 </div>
 
-                <div className="bg-yellow-50 rounded-lg p-4">
+                <div className="bg-navy-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
-                    <Wrench className="w-5 h-5 text-yellow-600 mr-2" />
+                    <Wrench className="w-5 h-5 text-navy-600 mr-2" />
                     <span className="text-sm text-gray-600">Engine Load</span>
                   </div>
                   <p className="text-2xl font-bold text-gray-900">
@@ -273,9 +308,9 @@ export default function VehicleDetailPage() {
                   </p>
                 </div>
 
-                <div className="bg-red-50 rounded-lg p-4">
+                <div className="bg-navy-50 rounded-lg p-4">
                   <div className="flex items-center mb-2">
-                    <Gauge className="w-5 h-5 text-red-600 mr-2" />
+                    <Gauge className="w-5 h-5 text-navy-600 mr-2" />
                     <span className="text-sm text-gray-600">Speed</span>
                   </div>
                   <p className="text-2xl font-bold text-gray-900">
@@ -363,58 +398,79 @@ export default function VehicleDetailPage() {
               <p className="text-gray-600">All systems operating normally</p>
             </div>
           ) : (
-            <div className="space-y-4">
-              {vehiclePredictions.map((prediction) => {
-                const messages = generateIssueMessages(prediction);
-                return (
-                  <div
-                    key={prediction.alert_id}
-                    className={`border rounded-lg p-4 ${getSeverityColor(
-                      prediction.severity
-                    )}`}
-                  >
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <div className="flex items-center space-x-2 mb-1">
-                          <span className="font-semibold text-lg">
-                            Alert #{prediction.alert_id}
-                          </span>
-                          <span className="px-2 py-1 rounded text-xs font-semibold bg-white/30">
-                            {prediction.severity}
-                          </span>
-                        </div>
-                        <p className="text-sm opacity-75">
-                          {formatDateTime(prediction.start_time)}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="space-y-2 mb-3">
-                      {messages.map((message, idx) => (
-                        <div key={idx} className="flex items-start">
-                          <span className="mr-2">•</span>
-                          <span className="text-sm">{message}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="pt-3 border-t border-black/10 grid grid-cols-2 gap-4 text-sm">
-                      <div>
-                        <span className="opacity-75">Affected Systems:</span>
-                        <p className="font-semibold mt-1">
-                          {prediction.factors.join(", ")}
-                        </p>
-                      </div>
-                      <div>
-                        <span className="opacity-75">Anomalies Detected:</span>
-                        <p className="font-semibold mt-1">
-                          {prediction.anomaly_count}
-                        </p>
-                      </div>
-                    </div>
+            <div
+              className={`border rounded-xl p-5 ${getSeverityColor(
+                latestPrediction.severity
+              )}`}
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <div className="flex items-center space-x-2 mb-1">
+                    <span className="font-semibold text-lg">Active Alert</span>
+                    <span className="px-2 py-1 rounded text-xs font-semibold bg-white/30">
+                      {latestPrediction.severity}
+                    </span>
                   </div>
-                );
-              })}
+                  <p className="text-sm opacity-75">
+                    {new Date().toLocaleString()}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="md:col-span-2">
+                  <p className="text-xs font-semibold opacity-80 mb-1">
+                    Problem
+                  </p>
+                  <p className="text-sm font-medium">
+                    {latestIssues[0] ||
+                      "Anomaly detected in vehicle telemetry."}
+                  </p>
+
+                  {latestIssues.length > 1 && (
+                    <div className="mt-2">
+                      <p className="text-xs font-semibold opacity-80 mb-1">
+                        Additional signal
+                      </p>
+                      <p className="text-sm">{latestIssues[1]}</p>
+                    </div>
+                  )}
+
+                  <div className="mt-3">
+                    <p className="text-xs font-semibold opacity-80 mb-1">
+                      Suggested fix
+                    </p>
+                    <p className="text-sm">
+                      {buildServiceSuggestion(latestPrediction)}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="md:col-span-1 flex flex-col justify-between">
+                  <div className="text-sm">
+                    <p className="text-xs font-semibold opacity-80 mb-1">
+                      Affected systems
+                    </p>
+                    <p className="font-semibold">
+                      {latestPrediction.factors.join(", ")}
+                    </p>
+
+                    <p className="text-xs font-semibold opacity-80 mt-3 mb-1">
+                      Anomalies
+                    </p>
+                    <p className="font-semibold">
+                      {latestPrediction.anomaly_count}
+                    </p>
+                  </div>
+
+                  <button
+                    onClick={() => router.push("/schedule")}
+                    className="mt-4 w-full bg-purple-800 text-white py-2.5 rounded-lg text-sm font-semibold hover:bg-purple-900 active:bg-purple-950 transition-colors"
+                  >
+                    Schedule Service
+                  </button>
+                </div>
+              </div>
             </div>
           )}
         </div>

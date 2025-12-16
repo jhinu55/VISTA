@@ -1,9 +1,11 @@
 "use client";
 
 import AppLayout from "@/components/AppLayout";
+import { useRouter } from "next/navigation";
 import { Filter, AlertCircle, Clock, ArrowRight } from "lucide-react";
 
 export default function AIInsights() {
+  const router = useRouter();
   const filters = ["All", "Engine", "Transmission", "Brakes", "Suspension"];
 
   const insights = [
@@ -162,7 +164,10 @@ export default function AIInsights() {
                       Explain More
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </button>
-                    <button className="flex-1 px-5 py-2.5 bg-gradient-to-r from-navy-700 to-navy-900 rounded-full text-sm font-semibold text-white hover:from-navy-800 hover:to-navy-950 transition-all shadow-lg hover:shadow-xl">
+                    <button
+                      onClick={() => router.push("/schedule")}
+                      className="flex-1 px-5 py-2.5 bg-gradient-to-r from-navy-700 to-navy-900 rounded-full text-sm font-semibold text-white hover:from-navy-800 hover:to-navy-950 transition-all shadow-lg hover:shadow-xl"
+                    >
                       Schedule Service
                     </button>
                   </div>

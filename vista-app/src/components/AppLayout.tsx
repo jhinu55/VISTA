@@ -51,7 +51,7 @@ export default function AppLayout({ children }: LayoutProps) {
                     href={item.href}
                     className={`flex items-center gap-2 px-3 lg:px-4 py-2 rounded-lg transition-colors ${
                       isActive
-                        ? "bg-navy-800 text-white"
+                        ? "bg-purple-800 text-white"
                         : "text-gray-600 hover:bg-gray-100"
                     }`}
                   >
@@ -65,7 +65,7 @@ export default function AppLayout({ children }: LayoutProps) {
             </div>
 
             <div className="flex items-center gap-2 sm:gap-4">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-navy-800 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-purple-800 rounded-full flex items-center justify-center">
                 <span className="text-white text-sm font-medium">JD</span>
               </div>
             </div>
@@ -85,12 +85,12 @@ export default function AppLayout({ children }: LayoutProps) {
                 key={item.href}
                 href={item.href}
                 className={`flex flex-col items-center gap-1 px-3 py-2 min-w-[64px] rounded-xl transition-all ${
-                  isActive ? "bg-navy-50" : ""
+                  isActive ? "bg-purple-50" : ""
                 }`}
               >
                 <div
                   className={`p-1.5 rounded-lg transition-all ${
-                    isActive ? "bg-navy-800" : "bg-transparent"
+                    isActive ? "bg-purple-800" : "bg-transparent"
                   }`}
                 >
                   <Icon
@@ -101,7 +101,7 @@ export default function AppLayout({ children }: LayoutProps) {
                 </div>
                 <span
                   className={`text-[10px] font-medium ${
-                    isActive ? "text-navy-900" : "text-gray-500"
+                    isActive ? "text-purple-900" : "text-gray-500"
                   }`}
                 >
                   {item.label}
