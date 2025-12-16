@@ -1,0 +1,4921 @@
+[
+  {
+    "alert_id": 2,
+    "device_id": 12,
+    "start_time": "2017-12-01T07:03:00",
+    "end_time": "2017-12-01T07:04:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 23,
+      "rpm": 887.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 48.2353,
+      "maf": 8.09
+    },
+    "min_values": {
+      "cTemp": 23,
+      "rpm": 876.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 43.5294,
+      "maf": 7.93
+    },
+    "max_values": {
+      "cTemp": 26,
+      "rpm": 892.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 49.4118,
+      "maf": 10.37
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 1,
+    "device_id": 9,
+    "start_time": "2017-12-01T06:53:00",
+    "end_time": "2017-12-01T06:54:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_battery"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 64,
+      "rpm": 1406.0,
+      "speed": 35,
+      "battery": 12.7,
+      "eLoad": 49.8039,
+      "maf": 5.29
+    },
+    "min_values": {
+      "cTemp": 57,
+      "rpm": 737.0,
+      "speed": 14,
+      "battery": 12.65,
+      "eLoad": 10.9804,
+      "maf": 1.84
+    },
+    "max_values": {
+      "cTemp": 66,
+      "rpm": 1945.0,
+      "speed": 47,
+      "battery": 14.675,
+      "eLoad": 98.0392,
+      "maf": 16.36
+    },
+    "anomaly_count": 99
+  },
+  {
+    "alert_id": 3,
+    "device_id": 12,
+    "start_time": "2017-12-01T07:42:00",
+    "end_time": "2017-12-01T07:43:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 52,
+      "rpm": 865.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 31.7647,
+      "maf": 9.56
+    },
+    "min_values": {
+      "cTemp": 51,
+      "rpm": 842.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 27.0588,
+      "maf": 7.06
+    },
+    "max_values": {
+      "cTemp": 53,
+      "rpm": 948.75,
+      "speed": 6,
+      "battery": 0.0,
+      "eLoad": 45.098,
+      "maf": 10.59
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 5,
+    "device_id": 9,
+    "start_time": "2017-12-01T08:04:00",
+    "end_time": "2017-12-01T08:05:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 48,
+      "rpm": 1130.0,
+      "speed": 0,
+      "battery": 14.475,
+      "eLoad": 24.7059,
+      "maf": 2.69
+    },
+    "min_values": {
+      "cTemp": 46,
+      "rpm": 804.0,
+      "speed": 0,
+      "battery": 14.375,
+      "eLoad": 20.3922,
+      "maf": 2.37
+    },
+    "max_values": {
+      "cTemp": 53,
+      "rpm": 1684.0,
+      "speed": 21,
+      "battery": 14.55,
+      "eLoad": 56.0784,
+      "maf": 5.55
+    },
+    "anomaly_count": 64
+  },
+  {
+    "alert_id": 4,
+    "device_id": 10,
+    "start_time": "2017-12-01T07:45:00",
+    "end_time": "2017-12-01T07:46:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 17,
+      "rpm": 815.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 25.4902,
+      "maf": 8.94
+    },
+    "min_values": {
+      "cTemp": 17,
+      "rpm": 740.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 21.9608,
+      "maf": 7.63
+    },
+    "max_values": {
+      "cTemp": 20,
+      "rpm": 823.0,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 41.5686,
+      "maf": 9.13
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 8,
+    "device_id": 10,
+    "start_time": "2017-12-01T09:18:00",
+    "end_time": "2017-12-01T09:19:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 82,
+      "rpm": 1553.0,
+      "speed": 40,
+      "battery": 0.0,
+      "eLoad": 76.8627,
+      "maf": 17.38
+    },
+    "min_values": {
+      "cTemp": 81,
+      "rpm": 1016.0,
+      "speed": 18,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.24
+    },
+    "max_values": {
+      "cTemp": 87,
+      "rpm": 1694.0,
+      "speed": 57,
+      "battery": 0.0,
+      "eLoad": 85.4902,
+      "maf": 17.38
+    },
+    "anomaly_count": 63
+  },
+  {
+    "alert_id": 9,
+    "device_id": 10,
+    "start_time": "2017-12-01T09:44:00",
+    "end_time": "2017-12-01T09:44:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "speed",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 252
+  },
+  {
+    "alert_id": 6,
+    "device_id": 12,
+    "start_time": "2017-12-01T08:10:00",
+    "end_time": "2017-12-01T08:11:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 62,
+      "rpm": 899.5,
+      "speed": 13,
+      "battery": 0.0,
+      "eLoad": 27.0588,
+      "maf": 7.62
+    },
+    "min_values": {
+      "cTemp": 61,
+      "rpm": 769.25,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 1.5686,
+      "maf": 6.87
+    },
+    "max_values": {
+      "cTemp": 64,
+      "rpm": 1328.0,
+      "speed": 20,
+      "battery": 0.0,
+      "eLoad": 69.4118,
+      "maf": 12.46
+    },
+    "anomaly_count": 102
+  },
+  {
+    "alert_id": 10,
+    "device_id": 10,
+    "start_time": "2017-12-01T09:47:00",
+    "end_time": "2017-12-01T09:48:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "ROC_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 85,
+      "rpm": 760.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 20.0,
+      "maf": 5.66
+    },
+    "min_values": {
+      "cTemp": 85,
+      "rpm": 624.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 5.66
+    },
+    "max_values": {
+      "cTemp": 86,
+      "rpm": 1475.0,
+      "speed": 26,
+      "battery": 0.0,
+      "eLoad": 96.8627,
+      "maf": 19.24
+    },
+    "anomaly_count": 58
+  },
+  {
+    "alert_id": 7,
+    "device_id": 9,
+    "start_time": "2017-12-01T08:28:00",
+    "end_time": "2017-12-01T08:28:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 76,
+      "rpm": 1078.0,
+      "speed": 13,
+      "battery": 14.525,
+      "eLoad": 40.7843,
+      "maf": 4.01
+    },
+    "min_values": {
+      "cTemp": 75,
+      "rpm": 782.0,
+      "speed": 2,
+      "battery": 14.425,
+      "eLoad": 23.9216,
+      "maf": 1.91
+    },
+    "max_values": {
+      "cTemp": 76,
+      "rpm": 1078.0,
+      "speed": 13,
+      "battery": 14.525,
+      "eLoad": 49.0196,
+      "maf": 4.01
+    },
+    "anomaly_count": 4
+  },
+  {
+    "alert_id": 13,
+    "device_id": 9,
+    "start_time": "2017-12-01T11:52:00",
+    "end_time": "2017-12-01T11:53:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 35,
+      "rpm": 1342.0,
+      "speed": 2,
+      "battery": 14.5,
+      "eLoad": 35.6863,
+      "maf": 4.29
+    },
+    "min_values": {
+      "cTemp": 34,
+      "rpm": 776.0,
+      "speed": 0,
+      "battery": 14.425,
+      "eLoad": 22.7451,
+      "maf": 2.82
+    },
+    "max_values": {
+      "cTemp": 44,
+      "rpm": 1706.0,
+      "speed": 17,
+      "battery": 14.675,
+      "eLoad": 70.1961,
+      "maf": 6.2
+    },
+    "anomaly_count": 90
+  },
+  {
+    "alert_id": 14,
+    "device_id": 9,
+    "start_time": "2017-12-01T14:05:00",
+    "end_time": "2017-12-01T14:06:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 60,
+      "rpm": 895.0,
+      "speed": 0,
+      "battery": 14.225,
+      "eLoad": 39.6078,
+      "maf": 3.36
+    },
+    "min_values": {
+      "cTemp": 57,
+      "rpm": 623.0,
+      "speed": 0,
+      "battery": 14.075,
+      "eLoad": 29.0196,
+      "maf": 3.05
+    },
+    "max_values": {
+      "cTemp": 66,
+      "rpm": 1233.0,
+      "speed": 8,
+      "battery": 14.325,
+      "eLoad": 69.4118,
+      "maf": 5.03
+    },
+    "anomaly_count": 51
+  },
+  {
+    "alert_id": 12,
+    "device_id": 10,
+    "start_time": "2017-12-01T11:40:00",
+    "end_time": "2017-12-01T11:41:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 49,
+      "rpm": 722.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 54.5098,
+      "maf": 6.36
+    },
+    "min_values": {
+      "cTemp": 48,
+      "rpm": 705.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 14.902,
+      "maf": 5.86
+    },
+    "max_values": {
+      "cTemp": 52,
+      "rpm": 929.5,
+      "speed": 4,
+      "battery": 0.0,
+      "eLoad": 71.7647,
+      "maf": 9.52
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 15,
+    "device_id": 9,
+    "start_time": "2017-12-01T14:22:00",
+    "end_time": "2017-12-01T14:22:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 75,
+      "rpm": 1661.0,
+      "speed": 36,
+      "battery": 14.35,
+      "eLoad": 24.7059,
+      "maf": 1.89
+    },
+    "min_values": {
+      "cTemp": 75,
+      "rpm": 692.0,
+      "speed": 11,
+      "battery": 14.175,
+      "eLoad": 0.0,
+      "maf": 1.79
+    },
+    "max_values": {
+      "cTemp": 79,
+      "rpm": 1963.0,
+      "speed": 36,
+      "battery": 14.425,
+      "eLoad": 97.6471,
+      "maf": 13.48
+    },
+    "anomaly_count": 9
+  },
+  {
+    "alert_id": 17,
+    "device_id": 9,
+    "start_time": "2017-12-01T15:11:00",
+    "end_time": "2017-12-01T15:11:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad"
+    ],
+    "factors": [
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 80,
+      "rpm": 990.0,
+      "speed": 24,
+      "battery": 14.375,
+      "eLoad": 17.6471,
+      "maf": 1.7
+    },
+    "min_values": {
+      "cTemp": 74,
+      "rpm": 788.0,
+      "speed": 18,
+      "battery": 14.325,
+      "eLoad": 13.7255,
+      "maf": 1.6
+    },
+    "max_values": {
+      "cTemp": 81,
+      "rpm": 1364.0,
+      "speed": 29,
+      "battery": 14.475,
+      "eLoad": 97.6471,
+      "maf": 10.48
+    },
+    "anomaly_count": 19
+  },
+  {
+    "alert_id": 16,
+    "device_id": 10,
+    "start_time": "2017-12-01T14:57:00",
+    "end_time": "2017-12-01T14:58:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 62,
+      "rpm": 1350.5,
+      "speed": 68,
+      "battery": 0.0,
+      "eLoad": 87.0588,
+      "maf": 17.86
+    },
+    "min_values": {
+      "cTemp": 61,
+      "rpm": 1172.0,
+      "speed": 59,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.22
+    },
+    "max_values": {
+      "cTemp": 68,
+      "rpm": 1420.0,
+      "speed": 72,
+      "battery": 0.0,
+      "eLoad": 92.1569,
+      "maf": 18.16
+    },
+    "anomaly_count": 125
+  },
+  {
+    "alert_id": 19,
+    "device_id": 10,
+    "start_time": "2017-12-01T16:50:00",
+    "end_time": "2017-12-01T16:51:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_cTemp",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "rpm",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 89,
+      "rpm": 1420.5,
+      "speed": 22,
+      "battery": 0.0,
+      "eLoad": 1.1765,
+      "maf": 8.52
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 91,
+      "rpm": 1420.5,
+      "speed": 22,
+      "battery": 0.0,
+      "eLoad": 65.8824,
+      "maf": 14.61
+    },
+    "anomaly_count": 65
+  },
+  {
+    "alert_id": 20,
+    "device_id": 10,
+    "start_time": "2017-12-01T16:54:00",
+    "end_time": "2017-12-01T16:55:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery"
+    ],
+    "factors": [
+      "battery"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 89,
+      "rpm": 900.0,
+      "speed": 5,
+      "battery": 0.0,
+      "eLoad": 18.8235,
+      "maf": 7.22
+    },
+    "min_values": {
+      "cTemp": 89,
+      "rpm": 739.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 11.7647,
+      "maf": 6.27
+    },
+    "max_values": {
+      "cTemp": 90,
+      "rpm": 969.5,
+      "speed": 10,
+      "battery": 0.0,
+      "eLoad": 50.5882,
+      "maf": 9.41
+    },
+    "anomaly_count": 50
+  },
+  {
+    "alert_id": 11,
+    "device_id": 12,
+    "start_time": "2017-12-01T09:50:00",
+    "end_time": "2017-12-01T09:51:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 44,
+      "rpm": 871.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 35.6863,
+      "maf": 8.93
+    },
+    "min_values": {
+      "cTemp": 44,
+      "rpm": 849.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.7843,
+      "maf": 8.81
+    },
+    "max_values": {
+      "cTemp": 47,
+      "rpm": 1447.75,
+      "speed": 16,
+      "battery": 0.0,
+      "eLoad": 51.7647,
+      "maf": 15.96
+    },
+    "anomaly_count": 102
+  },
+  {
+    "alert_id": 22,
+    "device_id": 12,
+    "start_time": "2017-12-01T18:08:00",
+    "end_time": "2017-12-01T18:09:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 32,
+      "rpm": 877.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 45.8824,
+      "maf": 8.12
+    },
+    "min_values": {
+      "cTemp": 31,
+      "rpm": 849.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 1.1765,
+      "maf": 7.56
+    },
+    "max_values": {
+      "cTemp": 35,
+      "rpm": 1075.75,
+      "speed": 8,
+      "battery": 0.0,
+      "eLoad": 47.451,
+      "maf": 10.84
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 23,
+    "device_id": 12,
+    "start_time": "2017-12-01T18:50:00",
+    "end_time": "2017-12-01T18:51:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 51,
+      "rpm": 858.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 40.7843,
+      "maf": 9.43
+    },
+    "min_values": {
+      "cTemp": 51,
+      "rpm": 801.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 12.9412,
+      "maf": 8.78
+    },
+    "max_values": {
+      "cTemp": 55,
+      "rpm": 1423.75,
+      "speed": 13,
+      "battery": 0.0,
+      "eLoad": 64.7059,
+      "maf": 16.56
+    },
+    "anomaly_count": 103
+  },
+  {
+    "alert_id": 18,
+    "device_id": 9,
+    "start_time": "2017-12-01T16:12:00",
+    "end_time": "2017-12-01T16:12:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 75,
+      "rpm": 818.0,
+      "speed": 10,
+      "battery": 14.55,
+      "eLoad": 36.4706,
+      "maf": 1.93
+    },
+    "min_values": {
+      "cTemp": 71,
+      "rpm": 818.0,
+      "speed": 2,
+      "battery": 14.325,
+      "eLoad": 13.3333,
+      "maf": 1.69
+    },
+    "max_values": {
+      "cTemp": 79,
+      "rpm": 1576.0,
+      "speed": 30,
+      "battery": 14.55,
+      "eLoad": 36.4706,
+      "maf": 1.93
+    },
+    "anomaly_count": 12
+  },
+  {
+    "alert_id": 24,
+    "device_id": 12,
+    "start_time": "2017-12-01T19:18:00",
+    "end_time": "2017-12-01T19:19:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 61,
+      "rpm": 860.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 35.6863,
+      "maf": 9.15
+    },
+    "min_values": {
+      "cTemp": 61,
+      "rpm": 837.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 18.0392,
+      "maf": 9.03
+    },
+    "max_values": {
+      "cTemp": 64,
+      "rpm": 908.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 38.8235,
+      "maf": 9.68
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 25,
+    "device_id": 9,
+    "start_time": "2017-12-01T20:40:00",
+    "end_time": "2017-12-01T20:41:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 44,
+      "rpm": 917.0,
+      "speed": 11,
+      "battery": 14.425,
+      "eLoad": 44.3137,
+      "maf": 3.61
+    },
+    "min_values": {
+      "cTemp": 39,
+      "rpm": 813.0,
+      "speed": 0,
+      "battery": 14.375,
+      "eLoad": 21.9608,
+      "maf": 2.96
+    },
+    "max_values": {
+      "cTemp": 48,
+      "rpm": 1658.0,
+      "speed": 19,
+      "battery": 14.525,
+      "eLoad": 73.3333,
+      "maf": 8.14
+    },
+    "anomaly_count": 51
+  },
+  {
+    "alert_id": 26,
+    "device_id": 12,
+    "start_time": "2017-12-01T20:41:00",
+    "end_time": "2017-12-01T20:41:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 51,
+      "rpm": 907.5,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 30.5882,
+      "maf": 9.93
+    },
+    "min_values": {
+      "cTemp": 47,
+      "rpm": 686.0,
+      "speed": 5,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.65
+    },
+    "max_values": {
+      "cTemp": 51,
+      "rpm": 1299.5,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 53.3333,
+      "maf": 14.25
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 27,
+    "device_id": 9,
+    "start_time": "2017-12-01T21:51:00",
+    "end_time": "2017-12-01T21:52:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 59,
+      "rpm": 1264.0,
+      "speed": 8,
+      "battery": 14.3,
+      "eLoad": 31.7647,
+      "maf": 6.0
+    },
+    "min_values": {
+      "cTemp": 58,
+      "rpm": 672.0,
+      "speed": 3,
+      "battery": 14.25,
+      "eLoad": 12.1569,
+      "maf": 2.19
+    },
+    "max_values": {
+      "cTemp": 67,
+      "rpm": 1980.0,
+      "speed": 39,
+      "battery": 14.5,
+      "eLoad": 98.8235,
+      "maf": 16.65
+    },
+    "anomaly_count": 61
+  },
+  {
+    "alert_id": 28,
+    "device_id": 12,
+    "start_time": "2017-12-02T06:03:00",
+    "end_time": "2017-12-02T06:04:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 26,
+      "rpm": 880.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 45.4902,
+      "maf": 10.18
+    },
+    "min_values": {
+      "cTemp": 24,
+      "rpm": 875.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 43.9216,
+      "maf": 7.84
+    },
+    "max_values": {
+      "cTemp": 27,
+      "rpm": 889.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 49.4118,
+      "maf": 10.31
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 29,
+    "device_id": 9,
+    "start_time": "2017-12-02T07:21:00",
+    "end_time": "2017-12-02T07:21:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 25,
+      "rpm": 1472.0,
+      "speed": 0,
+      "battery": 14.6,
+      "eLoad": 32.9412,
+      "maf": 4.4
+    },
+    "min_values": {
+      "cTemp": 25,
+      "rpm": 636.0,
+      "speed": 0,
+      "battery": 14.225,
+      "eLoad": 0.0,
+      "maf": 3.58
+    },
+    "max_values": {
+      "cTemp": 37,
+      "rpm": 1983.0,
+      "speed": 21,
+      "battery": 14.7,
+      "eLoad": 80.3922,
+      "maf": 9.79
+    },
+    "anomaly_count": 97
+  },
+  {
+    "alert_id": 21,
+    "device_id": 10,
+    "start_time": "2017-12-01T18:03:00",
+    "end_time": "2017-12-01T18:04:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_eLoad",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 58,
+      "rpm": 1135.0,
+      "speed": 12,
+      "battery": 0.0,
+      "eLoad": 24.3137,
+      "maf": 8.41
+    },
+    "min_values": {
+      "cTemp": 58,
+      "rpm": 729.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 7.8431,
+      "maf": 5.8
+    },
+    "max_values": {
+      "cTemp": 61,
+      "rpm": 1303.0,
+      "speed": 20,
+      "battery": 0.0,
+      "eLoad": 88.6275,
+      "maf": 13.8
+    },
+    "anomaly_count": 103
+  },
+  {
+    "alert_id": 31,
+    "device_id": 9,
+    "start_time": "2017-12-02T08:26:00",
+    "end_time": "2017-12-02T08:27:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "rpm",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 46,
+      "rpm": 1193.0,
+      "speed": 0,
+      "battery": 14.425,
+      "eLoad": 26.2745,
+      "maf": 3.42
+    },
+    "min_values": {
+      "cTemp": 46,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 10.525,
+      "eLoad": 0.0,
+      "maf": 0.36
+    },
+    "max_values": {
+      "cTemp": 52,
+      "rpm": 1837.0,
+      "speed": 10,
+      "battery": 14.525,
+      "eLoad": 84.7059,
+      "maf": 11.08
+    },
+    "anomaly_count": 68
+  },
+  {
+    "alert_id": 30,
+    "device_id": 12,
+    "start_time": "2017-12-02T07:22:00",
+    "end_time": "2017-12-02T07:22:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 50,
+      "rpm": 1025.75,
+      "speed": 24,
+      "battery": 0.0,
+      "eLoad": 67.8431,
+      "maf": 11.18
+    },
+    "min_values": {
+      "cTemp": 47,
+      "rpm": 809.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.37
+    },
+    "max_values": {
+      "cTemp": 50,
+      "rpm": 1608.25,
+      "speed": 25,
+      "battery": 0.0,
+      "eLoad": 87.8431,
+      "maf": 19.34
+    },
+    "anomaly_count": 105
+  },
+  {
+    "alert_id": 32,
+    "device_id": 10,
+    "start_time": "2017-12-02T08:30:00",
+    "end_time": "2017-12-02T08:31:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 15,
+      "rpm": 1503.5,
+      "speed": 24,
+      "battery": 0.0,
+      "eLoad": 41.9608,
+      "maf": 23.22
+    },
+    "min_values": {
+      "cTemp": 14,
+      "rpm": 819.0,
+      "speed": 3,
+      "battery": 0.0,
+      "eLoad": 0.7843,
+      "maf": 9.99
+    },
+    "max_values": {
+      "cTemp": 19,
+      "rpm": 1552.5,
+      "speed": 24,
+      "battery": 0.0,
+      "eLoad": 70.9804,
+      "maf": 23.22
+    },
+    "anomaly_count": 115
+  },
+  {
+    "alert_id": 35,
+    "device_id": 10,
+    "start_time": "2017-12-02T10:09:00",
+    "end_time": "2017-12-02T10:10:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 25,
+      "rpm": 1284.5,
+      "speed": 32,
+      "battery": 0.0,
+      "eLoad": 52.1569,
+      "maf": 10.55
+    },
+    "min_values": {
+      "cTemp": 24,
+      "rpm": 629.5,
+      "speed": 11,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.11
+    },
+    "max_values": {
+      "cTemp": 31,
+      "rpm": 1493.0,
+      "speed": 36,
+      "battery": 0.0,
+      "eLoad": 95.6863,
+      "maf": 23.63
+    },
+    "anomaly_count": 116
+  },
+  {
+    "alert_id": 36,
+    "device_id": 10,
+    "start_time": "2017-12-02T11:10:00",
+    "end_time": "2017-12-02T11:10:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 37,
+      "rpm": 1216.0,
+      "speed": 39,
+      "battery": 0.0,
+      "eLoad": 5.098,
+      "maf": 11.3
+    },
+    "min_values": {
+      "cTemp": 33,
+      "rpm": 727.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 6.49
+    },
+    "max_values": {
+      "cTemp": 37,
+      "rpm": 1638.5,
+      "speed": 39,
+      "battery": 0.0,
+      "eLoad": 97.2549,
+      "maf": 28.97
+    },
+    "anomaly_count": 112
+  },
+  {
+    "alert_id": 33,
+    "device_id": 9,
+    "start_time": "2017-12-02T08:52:00",
+    "end_time": "2017-12-02T08:52:00",
+    "severity": "WARNING",
+    "issues": [
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 80,
+      "rpm": 1291.0,
+      "speed": 25,
+      "battery": 14.45,
+      "eLoad": 16.0784,
+      "maf": 1.99
+    },
+    "min_values": {
+      "cTemp": 77,
+      "rpm": 1084.0,
+      "speed": 13,
+      "battery": 14.4,
+      "eLoad": 14.902,
+      "maf": 1.85
+    },
+    "max_values": {
+      "cTemp": 80,
+      "rpm": 1467.0,
+      "speed": 25,
+      "battery": 14.45,
+      "eLoad": 17.6471,
+      "maf": 1.99
+    },
+    "anomaly_count": 7
+  },
+  {
+    "alert_id": 37,
+    "device_id": 10,
+    "start_time": "2017-12-02T11:14:00",
+    "end_time": "2017-12-02T11:15:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 49,
+      "rpm": 1213.5,
+      "speed": 41,
+      "battery": 0.0,
+      "eLoad": 1.1765,
+      "maf": 10.72
+    },
+    "min_values": {
+      "cTemp": 48,
+      "rpm": 1075.0,
+      "speed": 36,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.3
+    },
+    "max_values": {
+      "cTemp": 53,
+      "rpm": 1476.0,
+      "speed": 51,
+      "battery": 0.0,
+      "eLoad": 86.6667,
+      "maf": 17.02
+    },
+    "anomaly_count": 119
+  },
+  {
+    "alert_id": 34,
+    "device_id": 12,
+    "start_time": "2017-12-02T09:22:00",
+    "end_time": "2017-12-02T09:23:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 43,
+      "rpm": 1698.0,
+      "speed": 9,
+      "battery": 0.0,
+      "eLoad": 34.1176,
+      "maf": 15.62
+    },
+    "min_values": {
+      "cTemp": 42,
+      "rpm": 829.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.25
+    },
+    "max_values": {
+      "cTemp": 46,
+      "rpm": 1698.0,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 59.2157,
+      "maf": 15.62
+    },
+    "anomaly_count": 105
+  },
+  {
+    "alert_id": 40,
+    "device_id": 10,
+    "start_time": "2017-12-02T13:05:00",
+    "end_time": "2017-12-02T13:06:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 49,
+      "rpm": 750.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 21.5686,
+      "maf": 6.58
+    },
+    "min_values": {
+      "cTemp": 48,
+      "rpm": 718.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 5.58
+    },
+    "max_values": {
+      "cTemp": 55,
+      "rpm": 1788.0,
+      "speed": 67,
+      "battery": 0.0,
+      "eLoad": 93.7255,
+      "maf": 42.86
+    },
+    "anomaly_count": 132
+  },
+  {
+    "alert_id": 38,
+    "device_id": 16,
+    "start_time": "2017-12-02T11:50:00",
+    "end_time": "2017-12-02T11:51:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 23,
+      "rpm": 1000.0,
+      "speed": 4,
+      "battery": 0.0,
+      "eLoad": 34.5098,
+      "maf": 9.63
+    },
+    "min_values": {
+      "cTemp": 23,
+      "rpm": 734.0,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 3.9216,
+      "maf": 7.3
+    },
+    "max_values": {
+      "cTemp": 27,
+      "rpm": 1645.5,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 77.2549,
+      "maf": 18.88
+    },
+    "anomaly_count": 104
+  },
+  {
+    "alert_id": 39,
+    "device_id": 9,
+    "start_time": "2017-12-02T13:04:00",
+    "end_time": "2017-12-02T13:05:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 36,
+      "rpm": 1344.0,
+      "speed": 0,
+      "battery": 14.525,
+      "eLoad": 28.2353,
+      "maf": 3.64
+    },
+    "min_values": {
+      "cTemp": 34,
+      "rpm": 1045.0,
+      "speed": 0,
+      "battery": 14.475,
+      "eLoad": 23.9216,
+      "maf": 2.74
+    },
+    "max_values": {
+      "cTemp": 43,
+      "rpm": 1805.0,
+      "speed": 4,
+      "battery": 14.6,
+      "eLoad": 54.902,
+      "maf": 5.82
+    },
+    "anomaly_count": 97
+  },
+  {
+    "alert_id": 41,
+    "device_id": 12,
+    "start_time": "2017-12-02T13:23:00",
+    "end_time": "2017-12-02T13:24:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 35,
+      "rpm": 875.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 41.1765,
+      "maf": 7.87
+    },
+    "min_values": {
+      "cTemp": 34,
+      "rpm": 817.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.15
+    },
+    "max_values": {
+      "cTemp": 38,
+      "rpm": 1132.0,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 88.2353,
+      "maf": 11.09
+    },
+    "anomaly_count": 103
+  },
+  {
+    "alert_id": 43,
+    "device_id": 16,
+    "start_time": "2017-12-02T13:41:00",
+    "end_time": "2017-12-02T13:41:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 35,
+      "rpm": 992.5,
+      "speed": 4,
+      "battery": 0.0,
+      "eLoad": 41.9608,
+      "maf": 9.05
+    },
+    "min_values": {
+      "cTemp": 33,
+      "rpm": 713.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 21.9608,
+      "maf": 6.91
+    },
+    "max_values": {
+      "cTemp": 36,
+      "rpm": 1054.0,
+      "speed": 8,
+      "battery": 0.0,
+      "eLoad": 57.2549,
+      "maf": 9.83
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 46,
+    "device_id": 16,
+    "start_time": "2017-12-02T14:50:00",
+    "end_time": "2017-12-02T14:51:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 44,
+      "rpm": 774.0,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 51.3725,
+      "maf": 7.63
+    },
+    "min_values": {
+      "cTemp": 44,
+      "rpm": 772.0,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 32.9412,
+      "maf": 7.63
+    },
+    "max_values": {
+      "cTemp": 53,
+      "rpm": 2431.5,
+      "speed": 39,
+      "battery": 0.0,
+      "eLoad": 92.1569,
+      "maf": 31.77
+    },
+    "anomaly_count": 119
+  },
+  {
+    "alert_id": 47,
+    "device_id": 16,
+    "start_time": "2017-12-02T15:18:00",
+    "end_time": "2017-12-02T15:19:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 82,
+      "rpm": 752.0,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 43.9216,
+      "maf": 7.05
+    },
+    "min_values": {
+      "cTemp": 82,
+      "rpm": 714.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 33.3333,
+      "maf": 6.27
+    },
+    "max_values": {
+      "cTemp": 86,
+      "rpm": 1064.5,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 66.2745,
+      "maf": 10.16
+    },
+    "anomaly_count": 51
+  },
+  {
+    "alert_id": 42,
+    "device_id": 10,
+    "start_time": "2017-12-02T13:33:00",
+    "end_time": "2017-12-02T13:34:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 89,
+      "rpm": 912.5,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 17.2549,
+      "maf": 8.33
+    },
+    "min_values": {
+      "cTemp": 88,
+      "rpm": 880.0,
+      "speed": 12,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 7.36
+    },
+    "max_values": {
+      "cTemp": 91,
+      "rpm": 1835.5,
+      "speed": 57,
+      "battery": 0.0,
+      "eLoad": 91.7647,
+      "maf": 42.99
+    },
+    "anomaly_count": 84
+  },
+  {
+    "alert_id": 45,
+    "device_id": 12,
+    "start_time": "2017-12-02T14:06:00",
+    "end_time": "2017-12-02T14:07:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 63,
+      "rpm": 1155.0,
+      "speed": 18,
+      "battery": 0.0,
+      "eLoad": 12.549,
+      "maf": 13.18
+    },
+    "min_values": {
+      "cTemp": 62,
+      "rpm": 822.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.81
+    },
+    "max_values": {
+      "cTemp": 65,
+      "rpm": 1602.0,
+      "speed": 18,
+      "battery": 0.0,
+      "eLoad": 57.2549,
+      "maf": 18.56
+    },
+    "anomaly_count": 110
+  },
+  {
+    "alert_id": 49,
+    "device_id": 10,
+    "start_time": "2017-12-02T17:09:00",
+    "end_time": "2017-12-02T17:10:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 41,
+      "rpm": 1402.0,
+      "speed": 22,
+      "battery": 0.0,
+      "eLoad": 54.5098,
+      "maf": 21.08
+    },
+    "min_values": {
+      "cTemp": 38,
+      "rpm": 687.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 4.7059,
+      "maf": 6.24
+    },
+    "max_values": {
+      "cTemp": 44,
+      "rpm": 1402.0,
+      "speed": 28,
+      "battery": 0.0,
+      "eLoad": 98.4314,
+      "maf": 21.08
+    },
+    "anomaly_count": 106
+  },
+  {
+    "alert_id": 50,
+    "device_id": 12,
+    "start_time": "2017-12-02T17:39:00",
+    "end_time": "2017-12-02T17:40:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 43,
+      "rpm": 1156.25,
+      "speed": 9,
+      "battery": 0.0,
+      "eLoad": 1.1765,
+      "maf": 13.96
+    },
+    "min_values": {
+      "cTemp": 42,
+      "rpm": 726.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.7843,
+      "maf": 8.43
+    },
+    "max_values": {
+      "cTemp": 46,
+      "rpm": 1196.25,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 50.1961,
+      "maf": 13.96
+    },
+    "anomaly_count": 104
+  },
+  {
+    "alert_id": 48,
+    "device_id": 16,
+    "start_time": "2017-12-02T16:57:00",
+    "end_time": "2017-12-02T16:58:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 64,
+      "rpm": 1226.0,
+      "speed": 30,
+      "battery": 0.0,
+      "eLoad": 47.451,
+      "maf": 8.19
+    },
+    "min_values": {
+      "cTemp": 62,
+      "rpm": 978.5,
+      "speed": 16,
+      "battery": 0.0,
+      "eLoad": 19.2157,
+      "maf": 7.72
+    },
+    "max_values": {
+      "cTemp": 66,
+      "rpm": 1247.5,
+      "speed": 30,
+      "battery": 0.0,
+      "eLoad": 80.0,
+      "maf": 14.58
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 52,
+    "device_id": 12,
+    "start_time": "2017-12-02T18:32:00",
+    "end_time": "2017-12-02T18:33:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 75,
+      "rpm": 843.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 51.3725,
+      "maf": 8.84
+    },
+    "min_values": {
+      "cTemp": 74,
+      "rpm": 794.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.34
+    },
+    "max_values": {
+      "cTemp": 77,
+      "rpm": 1574.0,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 63.9216,
+      "maf": 18.0
+    },
+    "anomaly_count": 54
+  },
+  {
+    "alert_id": 54,
+    "device_id": 12,
+    "start_time": "2017-12-02T19:34:00",
+    "end_time": "2017-12-02T19:35:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 69,
+      "rpm": 850.75,
+      "speed": 2,
+      "battery": 0.0,
+      "eLoad": 65.4902,
+      "maf": 9.53
+    },
+    "min_values": {
+      "cTemp": 67,
+      "rpm": 803.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.46
+    },
+    "max_values": {
+      "cTemp": 71,
+      "rpm": 1653.5,
+      "speed": 29,
+      "battery": 0.0,
+      "eLoad": 65.4902,
+      "maf": 19.37
+    },
+    "anomaly_count": 88
+  },
+  {
+    "alert_id": 55,
+    "device_id": 12,
+    "start_time": "2017-12-02T23:35:00",
+    "end_time": "2017-12-02T23:36:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 40,
+      "rpm": 866.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 42.7451,
+      "maf": 9.46
+    },
+    "min_values": {
+      "cTemp": 38,
+      "rpm": 828.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 23.5294,
+      "maf": 7.87
+    },
+    "max_values": {
+      "cTemp": 41,
+      "rpm": 930.0,
+      "speed": 6,
+      "battery": 0.0,
+      "eLoad": 52.549,
+      "maf": 10.0
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 51,
+    "device_id": 10,
+    "start_time": "2017-12-02T17:43:00",
+    "end_time": "2017-12-02T17:44:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 49,
+      "rpm": 1117.5,
+      "speed": 28,
+      "battery": 0.0,
+      "eLoad": 81.5686,
+      "maf": 10.02
+    },
+    "min_values": {
+      "cTemp": 48,
+      "rpm": 718.0,
+      "speed": 9,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 6.86
+    },
+    "max_values": {
+      "cTemp": 52,
+      "rpm": 1435.5,
+      "speed": 32,
+      "battery": 0.0,
+      "eLoad": 94.5098,
+      "maf": 19.19
+    },
+    "anomaly_count": 112
+  },
+  {
+    "alert_id": 56,
+    "device_id": 12,
+    "start_time": "2017-12-03T06:23:00",
+    "end_time": "2017-12-03T06:24:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 29,
+      "rpm": 877.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 43.5294,
+      "maf": 10.03
+    },
+    "min_values": {
+      "cTemp": 28,
+      "rpm": 873.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 30.9804,
+      "maf": 7.65
+    },
+    "max_values": {
+      "cTemp": 31,
+      "rpm": 882.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 45.4902,
+      "maf": 10.09
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 57,
+    "device_id": 10,
+    "start_time": "2017-12-03T07:41:00",
+    "end_time": "2017-12-03T07:42:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 16,
+      "rpm": 839.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 31.7647,
+      "maf": 11.41
+    },
+    "min_values": {
+      "cTemp": 13,
+      "rpm": 803.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 20.0,
+      "maf": 11.02
+    },
+    "max_values": {
+      "cTemp": 17,
+      "rpm": 967.0,
+      "speed": 4,
+      "battery": 0.0,
+      "eLoad": 37.6471,
+      "maf": 13.44
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 59,
+    "device_id": 10,
+    "start_time": "2017-12-03T09:46:00",
+    "end_time": "2017-12-03T09:47:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 16,
+      "rpm": 877.0,
+      "speed": 11,
+      "battery": 0.0,
+      "eLoad": 64.7059,
+      "maf": 12.08
+    },
+    "min_values": {
+      "cTemp": 15,
+      "rpm": 851.0,
+      "speed": 8,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.94
+    },
+    "max_values": {
+      "cTemp": 24,
+      "rpm": 1524.5,
+      "speed": 48,
+      "battery": 0.0,
+      "eLoad": 85.098,
+      "maf": 22.91
+    },
+    "anomaly_count": 136
+  },
+  {
+    "alert_id": 58,
+    "device_id": 12,
+    "start_time": "2017-12-03T08:46:00",
+    "end_time": "2017-12-03T08:47:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 34,
+      "rpm": 877.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 32.1569,
+      "maf": 10.06
+    },
+    "min_values": {
+      "cTemp": 32,
+      "rpm": 853.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 22.7451,
+      "maf": 7.75
+    },
+    "max_values": {
+      "cTemp": 36,
+      "rpm": 899.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 45.4902,
+      "maf": 10.15
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 44,
+    "device_id": 9,
+    "start_time": "2017-12-02T13:41:00",
+    "end_time": "2017-12-02T13:41:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "cTemp",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 67,
+      "rpm": 1736.0,
+      "speed": 0,
+      "battery": 14.25,
+      "eLoad": 45.4902,
+      "maf": 3.73
+    },
+    "min_values": {
+      "cTemp": 65,
+      "rpm": 466.0,
+      "speed": 0,
+      "battery": 13.575,
+      "eLoad": 25.098,
+      "maf": 3.05
+    },
+    "max_values": {
+      "cTemp": 69,
+      "rpm": 1773.0,
+      "speed": 7,
+      "battery": 14.275,
+      "eLoad": 73.7255,
+      "maf": 9.17
+    },
+    "anomaly_count": 26
+  },
+  {
+    "alert_id": 62,
+    "device_id": 9,
+    "start_time": "2017-12-03T12:23:00",
+    "end_time": "2017-12-03T12:23:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "cTemp",
+      "maf",
+      "rpm",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 23,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 11.7,
+      "eLoad": 0.0,
+      "maf": 0.26
+    },
+    "min_values": {
+      "cTemp": 23,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 11.675,
+      "eLoad": 0.0,
+      "maf": 0.26
+    },
+    "max_values": {
+      "cTemp": 23,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 11.725,
+      "eLoad": 0.0,
+      "maf": 0.29
+    },
+    "anomaly_count": 200
+  },
+  {
+    "alert_id": 63,
+    "device_id": 9,
+    "start_time": "2017-12-03T12:51:00",
+    "end_time": "2017-12-03T12:51:00",
+    "severity": "WARNING",
+    "issues": [
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 79,
+      "rpm": 1046.0,
+      "speed": 13,
+      "battery": 14.225,
+      "eLoad": 63.5294,
+      "maf": 3.36
+    },
+    "min_values": {
+      "cTemp": 79,
+      "rpm": 1046.0,
+      "speed": 13,
+      "battery": 14.225,
+      "eLoad": 63.5294,
+      "maf": 3.36
+    },
+    "max_values": {
+      "cTemp": 79,
+      "rpm": 1046.0,
+      "speed": 13,
+      "battery": 14.225,
+      "eLoad": 63.5294,
+      "maf": 3.36
+    },
+    "anomaly_count": 1
+  },
+  {
+    "alert_id": 64,
+    "device_id": 9,
+    "start_time": "2017-12-03T15:12:00",
+    "end_time": "2017-12-03T15:13:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 53,
+      "rpm": 1820.0,
+      "speed": 12,
+      "battery": 14.375,
+      "eLoad": 59.6078,
+      "maf": 9.79
+    },
+    "min_values": {
+      "cTemp": 53,
+      "rpm": 822.0,
+      "speed": 0,
+      "battery": 13.6,
+      "eLoad": 16.0784,
+      "maf": 2.19
+    },
+    "max_values": {
+      "cTemp": 63,
+      "rpm": 1827.0,
+      "speed": 13,
+      "battery": 14.5,
+      "eLoad": 59.6078,
+      "maf": 10.35
+    },
+    "anomaly_count": 51
+  },
+  {
+    "alert_id": 53,
+    "device_id": 16,
+    "start_time": "2017-12-02T18:37:00",
+    "end_time": "2017-12-02T18:38:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 59,
+      "rpm": 895.0,
+      "speed": 3,
+      "battery": 0.0,
+      "eLoad": 59.6078,
+      "maf": 7.3
+    },
+    "min_values": {
+      "cTemp": 58,
+      "rpm": 713.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 32.1569,
+      "maf": 6.72
+    },
+    "max_values": {
+      "cTemp": 62,
+      "rpm": 1037.0,
+      "speed": 5,
+      "battery": 0.0,
+      "eLoad": 71.7647,
+      "maf": 12.36
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 65,
+    "device_id": 9,
+    "start_time": "2017-12-03T16:05:00",
+    "end_time": "2017-12-03T16:06:00",
+    "severity": "WARNING",
+    "issues": [
+      "THRESHOLD_maf",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 85,
+      "rpm": 1231.0,
+      "speed": 16,
+      "battery": 14.325,
+      "eLoad": 33.7255,
+      "maf": 2.77
+    },
+    "min_values": {
+      "cTemp": 85,
+      "rpm": 689.0,
+      "speed": 0,
+      "battery": 13.775,
+      "eLoad": 22.3529,
+      "maf": 1.57
+    },
+    "max_values": {
+      "cTemp": 86,
+      "rpm": 1443.0,
+      "speed": 25,
+      "battery": 14.35,
+      "eLoad": 45.098,
+      "maf": 2.77
+    },
+    "anomaly_count": 29
+  },
+  {
+    "alert_id": 66,
+    "device_id": 16,
+    "start_time": "2017-12-03T18:42:00",
+    "end_time": "2017-12-03T18:43:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 25,
+      "rpm": 1167.0,
+      "speed": 15,
+      "battery": 0.0,
+      "eLoad": 29.0196,
+      "maf": 8.91
+    },
+    "min_values": {
+      "cTemp": 24,
+      "rpm": 779.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 3.5294,
+      "maf": 7.77
+    },
+    "max_values": {
+      "cTemp": 28,
+      "rpm": 1881.0,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 83.9216,
+      "maf": 25.41
+    },
+    "anomaly_count": 103
+  },
+  {
+    "alert_id": 68,
+    "device_id": 16,
+    "start_time": "2017-12-04T09:37:00",
+    "end_time": "2017-12-04T09:38:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 26,
+      "rpm": 981.5,
+      "speed": 12,
+      "battery": 0.0,
+      "eLoad": 51.3725,
+      "maf": 9.86
+    },
+    "min_values": {
+      "cTemp": 24,
+      "rpm": 752.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 25.4902,
+      "maf": 7.8
+    },
+    "max_values": {
+      "cTemp": 28,
+      "rpm": 1521.5,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 78.0392,
+      "maf": 14.16
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 69,
+    "device_id": 16,
+    "start_time": "2017-12-04T10:26:00",
+    "end_time": "2017-12-04T10:27:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 35,
+      "rpm": 807.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 24.7059,
+      "maf": 8.63
+    },
+    "min_values": {
+      "cTemp": 35,
+      "rpm": 694.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.3922,
+      "maf": 6.86
+    },
+    "max_values": {
+      "cTemp": 39,
+      "rpm": 1710.0,
+      "speed": 16,
+      "battery": 0.0,
+      "eLoad": 83.1373,
+      "maf": 26.97
+    },
+    "anomaly_count": 102
+  },
+  {
+    "alert_id": 70,
+    "device_id": 16,
+    "start_time": "2017-12-04T12:42:00",
+    "end_time": "2017-12-04T12:42:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 63,
+      "rpm": 1467.5,
+      "speed": 11,
+      "battery": 0.0,
+      "eLoad": 61.5686,
+      "maf": 11.33
+    },
+    "min_values": {
+      "cTemp": 59,
+      "rpm": 714.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 6.66
+    },
+    "max_values": {
+      "cTemp": 64,
+      "rpm": 2100.5,
+      "speed": 22,
+      "battery": 0.0,
+      "eLoad": 82.3529,
+      "maf": 24.19
+    },
+    "anomaly_count": 107
+  },
+  {
+    "alert_id": 71,
+    "device_id": 16,
+    "start_time": "2017-12-04T14:46:00",
+    "end_time": "2017-12-04T14:47:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 63,
+      "rpm": 991.0,
+      "speed": 6,
+      "battery": 0.0,
+      "eLoad": 44.3137,
+      "maf": 8.97
+    },
+    "min_values": {
+      "cTemp": 61,
+      "rpm": 942.0,
+      "speed": 2,
+      "battery": 0.0,
+      "eLoad": 35.6863,
+      "maf": 8.13
+    },
+    "max_values": {
+      "cTemp": 66,
+      "rpm": 1333.0,
+      "speed": 21,
+      "battery": 0.0,
+      "eLoad": 82.3529,
+      "maf": 14.47
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 72,
+    "device_id": 16,
+    "start_time": "2017-12-04T14:55:00",
+    "end_time": "2017-12-04T14:56:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 251
+  },
+  {
+    "alert_id": 73,
+    "device_id": 16,
+    "start_time": "2017-12-04T18:07:00",
+    "end_time": "2017-12-04T18:08:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 42,
+      "rpm": 710.5,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 49.8039,
+      "maf": 6.74
+    },
+    "min_values": {
+      "cTemp": 42,
+      "rpm": 710.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 25.098,
+      "maf": 6.49
+    },
+    "max_values": {
+      "cTemp": 46,
+      "rpm": 1092.0,
+      "speed": 8,
+      "battery": 0.0,
+      "eLoad": 75.6863,
+      "maf": 11.08
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 74,
+    "device_id": 16,
+    "start_time": "2017-12-04T18:42:00",
+    "end_time": "2017-12-04T18:43:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 54,
+      "rpm": 754.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 28.6275,
+      "maf": 6.74
+    },
+    "min_values": {
+      "cTemp": 54,
+      "rpm": 730.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 25.098,
+      "maf": 6.36
+    },
+    "max_values": {
+      "cTemp": 56,
+      "rpm": 899.5,
+      "speed": 2,
+      "battery": 0.0,
+      "eLoad": 33.7255,
+      "maf": 8.33
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 75,
+    "device_id": 16,
+    "start_time": "2017-12-04T19:02:00",
+    "end_time": "2017-12-04T19:03:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 87,
+      "rpm": 993.0,
+      "speed": 10,
+      "battery": 0.0,
+      "eLoad": 67.8431,
+      "maf": 10.3
+    },
+    "min_values": {
+      "cTemp": 86,
+      "rpm": 860.5,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 0.3922,
+      "maf": 7.86
+    },
+    "max_values": {
+      "cTemp": 88,
+      "rpm": 1572.5,
+      "speed": 20,
+      "battery": 0.0,
+      "eLoad": 70.5882,
+      "maf": 12.97
+    },
+    "anomaly_count": 52
+  },
+  {
+    "alert_id": 76,
+    "device_id": 16,
+    "start_time": "2017-12-04T21:59:00",
+    "end_time": "2017-12-04T22:00:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 41,
+      "rpm": 759.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 36.4706,
+      "maf": 7.33
+    },
+    "min_values": {
+      "cTemp": 41,
+      "rpm": 661.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 22.3529,
+      "maf": 6.74
+    },
+    "max_values": {
+      "cTemp": 44,
+      "rpm": 954.5,
+      "speed": 3,
+      "battery": 0.0,
+      "eLoad": 65.098,
+      "maf": 11.05
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 77,
+    "device_id": 16,
+    "start_time": "2017-12-05T10:16:00",
+    "end_time": "2017-12-05T10:17:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 25,
+      "rpm": 1436.5,
+      "speed": 11,
+      "battery": 0.0,
+      "eLoad": 59.2157,
+      "maf": 17.05
+    },
+    "min_values": {
+      "cTemp": 24,
+      "rpm": 731.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 19.6078,
+      "maf": 7.86
+    },
+    "max_values": {
+      "cTemp": 29,
+      "rpm": 1782.0,
+      "speed": 19,
+      "battery": 0.0,
+      "eLoad": 82.3529,
+      "maf": 21.83
+    },
+    "anomaly_count": 103
+  },
+  {
+    "alert_id": 78,
+    "device_id": 16,
+    "start_time": "2017-12-05T11:42:00",
+    "end_time": "2017-12-05T11:43:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 35,
+      "rpm": 895.5,
+      "speed": 2,
+      "battery": 0.0,
+      "eLoad": 39.2157,
+      "maf": 8.77
+    },
+    "min_values": {
+      "cTemp": 34,
+      "rpm": 701.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 22.3529,
+      "maf": 6.58
+    },
+    "max_values": {
+      "cTemp": 37,
+      "rpm": 1788.0,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 61.5686,
+      "maf": 16.33
+    },
+    "anomaly_count": 102
+  },
+  {
+    "alert_id": 79,
+    "device_id": 16,
+    "start_time": "2017-12-05T12:07:00",
+    "end_time": "2017-12-05T12:08:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 45,
+      "rpm": 750.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 23.5294,
+      "maf": 6.58
+    },
+    "min_values": {
+      "cTemp": 45,
+      "rpm": 721.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.3922,
+      "maf": 6.13
+    },
+    "max_values": {
+      "cTemp": 48,
+      "rpm": 1580.5,
+      "speed": 16,
+      "battery": 0.0,
+      "eLoad": 82.3529,
+      "maf": 15.05
+    },
+    "anomaly_count": 102
+  },
+  {
+    "alert_id": 82,
+    "device_id": 0,
+    "start_time": "2017-12-22T18:43:00",
+    "end_time": "2017-12-22T18:43:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf",
+      "PATTERN_ENGINE"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "ENGINE"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 66,
+      "rpm": 1010.75,
+      "speed": 23,
+      "battery": 0.0,
+      "eLoad": 28.6275,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 66,
+      "rpm": 783.25,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 25.4902,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 69,
+      "rpm": 1657.75,
+      "speed": 32,
+      "battery": 0.0,
+      "eLoad": 85.098,
+      "maf": 0.0
+    },
+    "anomaly_count": 151
+  },
+  {
+    "alert_id": 83,
+    "device_id": 0,
+    "start_time": "2017-12-22T19:30:00",
+    "end_time": "2017-12-22T19:31:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 65,
+      "rpm": 2337.5,
+      "speed": 36,
+      "battery": 0.0,
+      "eLoad": 50.1961,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 63,
+      "rpm": 797.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 21.5686,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 68,
+      "rpm": 2802.0,
+      "speed": 43,
+      "battery": 0.0,
+      "eLoad": 51.7647,
+      "maf": 0.0
+    },
+    "anomaly_count": 159
+  },
+  {
+    "alert_id": 84,
+    "device_id": 0,
+    "start_time": "2017-12-23T06:00:00",
+    "end_time": "2017-12-23T06:01:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "speed"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 20,
+      "rpm": 821.0,
+      "speed": 2,
+      "battery": 0.0,
+      "eLoad": 46.6667,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 19,
+      "rpm": 724.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 23.9216,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 22,
+      "rpm": 1848.0,
+      "speed": 18,
+      "battery": 0.0,
+      "eLoad": 62.7451,
+      "maf": 0.0
+    },
+    "anomaly_count": 152
+  },
+  {
+    "alert_id": 85,
+    "device_id": 0,
+    "start_time": "2017-12-23T06:07:00",
+    "end_time": "2017-12-23T06:07:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 40,
+      "rpm": 1621.0,
+      "speed": 25,
+      "battery": 0.0,
+      "eLoad": 51.7647,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 34,
+      "rpm": 913.25,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 20.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 42,
+      "rpm": 2357.0,
+      "speed": 49,
+      "battery": 0.0,
+      "eLoad": 76.8627,
+      "maf": 0.0
+    },
+    "anomaly_count": 158
+  },
+  {
+    "alert_id": 86,
+    "device_id": 0,
+    "start_time": "2017-12-23T06:47:00",
+    "end_time": "2017-12-23T06:48:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "PATTERN_ENGINE"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "ENGINE",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 76,
+      "rpm": 1718.5,
+      "speed": 73,
+      "battery": 0.0,
+      "eLoad": 72.549,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 76,
+      "rpm": 1144.25,
+      "speed": 47,
+      "battery": 0.0,
+      "eLoad": 21.1765,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 83,
+      "rpm": 2187.0,
+      "speed": 93,
+      "battery": 0.0,
+      "eLoad": 94.1176,
+      "maf": 0.0
+    },
+    "anomaly_count": 132
+  },
+  {
+    "alert_id": 87,
+    "device_id": 0,
+    "start_time": "2017-12-23T08:22:00",
+    "end_time": "2017-12-23T08:23:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "ROC_speed",
+      "PATTERN_ENGINE"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "speed",
+      "ENGINE"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 74,
+      "rpm": 1494.0,
+      "speed": 45,
+      "battery": 0.0,
+      "eLoad": 22.3529,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 74,
+      "rpm": 1103.75,
+      "speed": 44,
+      "battery": 0.0,
+      "eLoad": 22.3529,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 83,
+      "rpm": 1978.75,
+      "speed": 84,
+      "battery": 0.0,
+      "eLoad": 84.3137,
+      "maf": 0.0
+    },
+    "anomaly_count": 108
+  },
+  {
+    "alert_id": 88,
+    "device_id": 0,
+    "start_time": "2017-12-23T09:42:00",
+    "end_time": "2017-12-23T09:43:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "THRESHOLD_maf",
+      "ROC_speed"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "ALTERNATOR",
+      "speed"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 80,
+      "rpm": 1233.25,
+      "speed": 29,
+      "battery": 0.0,
+      "eLoad": 38.8235,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 75,
+      "rpm": 972.0,
+      "speed": 14,
+      "battery": 0.0,
+      "eLoad": 20.7843,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 81,
+      "rpm": 2667.5,
+      "speed": 48,
+      "battery": 0.0,
+      "eLoad": 80.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 108
+  },
+  {
+    "alert_id": 89,
+    "device_id": 0,
+    "start_time": "2017-12-23T11:23:00",
+    "end_time": "2017-12-23T11:23:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "THRESHOLD_maf",
+      "ROC_speed"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "ALTERNATOR",
+      "speed"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 80,
+      "rpm": 1639.25,
+      "speed": 69,
+      "battery": 0.0,
+      "eLoad": 31.3725,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 75,
+      "rpm": 1399.0,
+      "speed": 22,
+      "battery": 0.0,
+      "eLoad": 20.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 83,
+      "rpm": 2127.5,
+      "speed": 74,
+      "battery": 0.0,
+      "eLoad": 75.2941,
+      "maf": 0.0
+    },
+    "anomaly_count": 107
+  },
+  {
+    "alert_id": 90,
+    "device_id": 0,
+    "start_time": "2017-12-23T12:41:00",
+    "end_time": "2017-12-23T12:42:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "speed",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 63,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 64,
+      "rpm": 851.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 42.3529,
+      "maf": 0.0
+    },
+    "anomaly_count": 237
+  },
+  {
+    "alert_id": 91,
+    "device_id": 0,
+    "start_time": "2017-12-23T12:57:00",
+    "end_time": "2017-12-23T12:58:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "PATTERN_ENGINE"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "eLoad",
+      "ENGINE",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 75,
+      "rpm": 858.5,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 69.4118,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 74,
+      "rpm": 719.25,
+      "speed": 15,
+      "battery": 0.0,
+      "eLoad": 25.098,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 78,
+      "rpm": 1513.75,
+      "speed": 31,
+      "battery": 0.0,
+      "eLoad": 92.549,
+      "maf": 0.0
+    },
+    "anomaly_count": 112
+  },
+  {
+    "alert_id": 92,
+    "device_id": 0,
+    "start_time": "2017-12-23T14:51:00",
+    "end_time": "2017-12-23T14:52:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 80,
+      "rpm": 818.25,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 49.8039,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 78,
+      "rpm": 777.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 21.5686,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 82,
+      "rpm": 1912.0,
+      "speed": 16,
+      "battery": 0.0,
+      "eLoad": 69.0196,
+      "maf": 0.0
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 93,
+    "device_id": 0,
+    "start_time": "2017-12-23T17:45:00",
+    "end_time": "2017-12-23T17:46:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 78,
+      "rpm": 847.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 41.5686,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 74,
+      "rpm": 789.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 37.6471,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 80,
+      "rpm": 857.5,
+      "speed": 4,
+      "battery": 0.0,
+      "eLoad": 67.8431,
+      "maf": 0.0
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 94,
+    "device_id": 0,
+    "start_time": "2017-12-23T20:15:00",
+    "end_time": "2017-12-23T20:16:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 44,
+      "rpm": 857.0,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 45.4902,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 44,
+      "rpm": 765.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 40.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 47,
+      "rpm": 857.0,
+      "speed": 5,
+      "battery": 0.0,
+      "eLoad": 61.5686,
+      "maf": 0.0
+    },
+    "anomaly_count": 151
+  },
+  {
+    "alert_id": 81,
+    "device_id": 14,
+    "start_time": "2017-12-21T10:59:00",
+    "end_time": "2017-12-21T11:00:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 250
+  },
+  {
+    "alert_id": 95,
+    "device_id": 0,
+    "start_time": "2017-12-23T22:39:00",
+    "end_time": "2017-12-23T22:39:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 40,
+      "rpm": 852.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 47.451,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 40,
+      "rpm": 782.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 39.6078,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 43,
+      "rpm": 1171.25,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 63.5294,
+      "maf": 0.0
+    },
+    "anomaly_count": 150
+  },
+  {
+    "alert_id": 97,
+    "device_id": 0,
+    "start_time": "2017-12-24T06:54:00",
+    "end_time": "2017-12-24T06:55:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 18,
+      "rpm": 818.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 47.0588,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 18,
+      "rpm": 795.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 38.8235,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 20,
+      "rpm": 931.5,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 51.3725,
+      "maf": 0.0
+    },
+    "anomaly_count": 150
+  },
+  {
+    "alert_id": 96,
+    "device_id": 14,
+    "start_time": "2017-12-24T06:39:00",
+    "end_time": "2017-12-24T06:40:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 250
+  },
+  {
+    "alert_id": 98,
+    "device_id": 0,
+    "start_time": "2017-12-24T08:09:00",
+    "end_time": "2017-12-24T08:10:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 32,
+      "rpm": 813.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 41.5686,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 31,
+      "rpm": 753.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 20.7843,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 36,
+      "rpm": 2281.5,
+      "speed": 38,
+      "battery": 0.0,
+      "eLoad": 71.7647,
+      "maf": 0.0
+    },
+    "anomaly_count": 154
+  },
+  {
+    "alert_id": 100,
+    "device_id": 0,
+    "start_time": "2017-12-24T10:28:00",
+    "end_time": "2017-12-24T10:29:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 30,
+      "rpm": 805.25,
+      "speed": 3,
+      "battery": 0.0,
+      "eLoad": 54.5098,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 30,
+      "rpm": 769.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 22.7451,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 34,
+      "rpm": 1980.25,
+      "speed": 16,
+      "battery": 0.0,
+      "eLoad": 60.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 150
+  },
+  {
+    "alert_id": 99,
+    "device_id": 14,
+    "start_time": "2017-12-24T09:37:00",
+    "end_time": "2017-12-24T09:38:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 250
+  },
+  {
+    "alert_id": 101,
+    "device_id": 0,
+    "start_time": "2017-12-24T12:49:00",
+    "end_time": "2017-12-24T12:50:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 60,
+      "rpm": 827.75,
+      "speed": 3,
+      "battery": 0.0,
+      "eLoad": 49.4118,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 59,
+      "rpm": 748.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 22.7451,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 65,
+      "rpm": 1374.25,
+      "speed": 11,
+      "battery": 0.0,
+      "eLoad": 74.902,
+      "maf": 0.0
+    },
+    "anomaly_count": 151
+  },
+  {
+    "alert_id": 103,
+    "device_id": 0,
+    "start_time": "2017-12-24T15:29:00",
+    "end_time": "2017-12-24T15:30:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 56,
+      "rpm": 853.75,
+      "speed": 5,
+      "battery": 0.0,
+      "eLoad": 56.0784,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 54,
+      "rpm": 831.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 23.1373,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 59,
+      "rpm": 1595.5,
+      "speed": 22,
+      "battery": 0.0,
+      "eLoad": 67.8431,
+      "maf": 0.0
+    },
+    "anomaly_count": 150
+  },
+  {
+    "alert_id": 106,
+    "device_id": 5,
+    "start_time": "2017-12-30T17:31:00",
+    "end_time": "2017-12-30T17:32:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 67,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 24.7059,
+      "maf": 0.03
+    },
+    "anomaly_count": 250
+  },
+  {
+    "alert_id": 105,
+    "device_id": 7,
+    "start_time": "2017-12-30T17:24:00",
+    "end_time": "2017-12-30T17:25:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_maf",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "cTemp",
+      "maf",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 58,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 12.96,
+      "eLoad": 78.0392,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 58,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 12.96,
+      "eLoad": 78.0392,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 58,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 13.02,
+      "eLoad": 78.0392,
+      "maf": 0.0
+    },
+    "anomaly_count": 150
+  },
+  {
+    "alert_id": 107,
+    "device_id": 5,
+    "start_time": "2017-12-30T17:46:00",
+    "end_time": "2017-12-30T17:47:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_cTemp",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 63,
+      "rpm": 905.5,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 22.3529,
+      "maf": 10.78
+    },
+    "min_values": {
+      "cTemp": 62,
+      "rpm": 716.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 8.22
+    },
+    "max_values": {
+      "cTemp": 65,
+      "rpm": 3163.75,
+      "speed": 26,
+      "battery": 0.0,
+      "eLoad": 56.0784,
+      "maf": 47.28
+    },
+    "anomaly_count": 126
+  },
+  {
+    "alert_id": 109,
+    "device_id": 5,
+    "start_time": "2017-12-30T19:15:00",
+    "end_time": "2017-12-30T19:15:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 55,
+      "rpm": 801.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 23.9216,
+      "maf": 9.11
+    },
+    "min_values": {
+      "cTemp": 55,
+      "rpm": 741.25,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 9.11
+    },
+    "max_values": {
+      "cTemp": 61,
+      "rpm": 2185.25,
+      "speed": 35,
+      "battery": 0.0,
+      "eLoad": 83.5294,
+      "maf": 33.17
+    },
+    "anomaly_count": 134
+  },
+  {
+    "alert_id": 110,
+    "device_id": 5,
+    "start_time": "2017-12-31T07:04:00",
+    "end_time": "2017-12-31T07:05:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 15,
+      "rpm": 1815.5,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 2.3529,
+      "maf": 22.67
+    },
+    "min_values": {
+      "cTemp": 15,
+      "rpm": 722.5,
+      "speed": 6,
+      "battery": 0.0,
+      "eLoad": 2.3529,
+      "maf": 9.89
+    },
+    "max_values": {
+      "cTemp": 24,
+      "rpm": 2504.25,
+      "speed": 44,
+      "battery": 0.0,
+      "eLoad": 98.8235,
+      "maf": 38.83
+    },
+    "anomaly_count": 140
+  },
+  {
+    "alert_id": 111,
+    "device_id": 5,
+    "start_time": "2017-12-31T07:27:00",
+    "end_time": "2017-12-31T07:28:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "ROC_speed",
+      "ROC_cTemp",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "speed",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 47,
+      "rpm": 810.0,
+      "speed": 3,
+      "battery": 0.0,
+      "eLoad": 43.5294,
+      "maf": 10.03
+    },
+    "min_values": {
+      "cTemp": 46,
+      "rpm": 582.75,
+      "speed": 1,
+      "battery": 0.0,
+      "eLoad": 10.1961,
+      "maf": 5.17
+    },
+    "max_values": {
+      "cTemp": 49,
+      "rpm": 2156.5,
+      "speed": 33,
+      "battery": 0.0,
+      "eLoad": 99.6078,
+      "maf": 36.06
+    },
+    "anomaly_count": 130
+  },
+  {
+    "alert_id": 108,
+    "device_id": 7,
+    "start_time": "2017-12-30T18:36:00",
+    "end_time": "2017-12-30T18:37:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 43,
+      "rpm": 1071.5,
+      "speed": 7,
+      "battery": 14.64,
+      "eLoad": 70.5882,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 41,
+      "rpm": 768.5,
+      "speed": 0,
+      "battery": 14.24,
+      "eLoad": 10.5882,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 50,
+      "rpm": 2415.0,
+      "speed": 15,
+      "battery": 14.68,
+      "eLoad": 70.5882,
+      "maf": 0.0
+    },
+    "anomaly_count": 131
+  },
+  {
+    "alert_id": 113,
+    "device_id": 7,
+    "start_time": "2017-12-31T12:55:00",
+    "end_time": "2017-12-31T12:56:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "PATTERN_ENGINE",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "rpm",
+      "maf",
+      "eLoad",
+      "ENGINE",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 21,
+      "rpm": 1274.0,
+      "speed": 6,
+      "battery": 14.78,
+      "eLoad": 56.8627,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 21,
+      "rpm": 873.5,
+      "speed": 0,
+      "battery": 14.12,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 33,
+      "rpm": 3179.5,
+      "speed": 21,
+      "battery": 14.9,
+      "eLoad": 98.4314,
+      "maf": 0.0
+    },
+    "anomaly_count": 154
+  },
+  {
+    "alert_id": 60,
+    "device_id": 10,
+    "start_time": "2017-12-03T10:31:00",
+    "end_time": "2017-12-03T10:32:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "THRESHOLD_maf"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "eLoad"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 31,
+      "rpm": 1232.0,
+      "speed": 31,
+      "battery": 0.0,
+      "eLoad": 8.6275,
+      "maf": 9.55
+    },
+    "min_values": {
+      "cTemp": 29,
+      "rpm": 714.5,
+      "speed": 7,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 6.52
+    },
+    "max_values": {
+      "cTemp": 34,
+      "rpm": 1545.0,
+      "speed": 31,
+      "battery": 0.0,
+      "eLoad": 94.902,
+      "maf": 15.66
+    },
+    "anomaly_count": 109
+  },
+  {
+    "alert_id": 61,
+    "device_id": 12,
+    "start_time": "2017-12-03T10:43:00",
+    "end_time": "2017-12-03T10:44:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 41,
+      "rpm": 870.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 38.0392,
+      "maf": 8.06
+    },
+    "min_values": {
+      "cTemp": 40,
+      "rpm": 838.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 32.9412,
+      "maf": 7.96
+    },
+    "max_values": {
+      "cTemp": 43,
+      "rpm": 1089.0,
+      "speed": 8,
+      "battery": 0.0,
+      "eLoad": 46.2745,
+      "maf": 12.34
+    },
+    "anomaly_count": 100
+  },
+  {
+    "alert_id": 67,
+    "device_id": 9,
+    "start_time": "2017-12-04T06:57:00",
+    "end_time": "2017-12-04T06:57:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_speed",
+      "THRESHOLD_maf",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_cTemp",
+      "ROC_rpm"
+    ],
+    "factors": [
+      "battery",
+      "rpm",
+      "speed",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 30,
+      "rpm": 1576.0,
+      "speed": 3,
+      "battery": 14.575,
+      "eLoad": 54.5098,
+      "maf": 8.85
+    },
+    "min_values": {
+      "cTemp": 25,
+      "rpm": 772.0,
+      "speed": 0,
+      "battery": 14.425,
+      "eLoad": 0.0,
+      "maf": 3.42
+    },
+    "max_values": {
+      "cTemp": 38,
+      "rpm": 2760.0,
+      "speed": 35,
+      "battery": 14.65,
+      "eLoad": 88.2353,
+      "maf": 21.9
+    },
+    "anomaly_count": 104
+  },
+  {
+    "alert_id": 80,
+    "device_id": 16,
+    "start_time": "2017-12-05T14:34:00",
+    "end_time": "2017-12-05T14:34:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 50,
+      "rpm": 883.0,
+      "speed": 2,
+      "battery": 0.0,
+      "eLoad": 29.8039,
+      "maf": 7.8
+    },
+    "min_values": {
+      "cTemp": 49,
+      "rpm": 724.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 6.47
+    },
+    "max_values": {
+      "cTemp": 53,
+      "rpm": 2085.5,
+      "speed": 17,
+      "battery": 0.0,
+      "eLoad": 72.9412,
+      "maf": 20.97
+    },
+    "anomaly_count": 108
+  },
+  {
+    "alert_id": 102,
+    "device_id": 14,
+    "start_time": "2017-12-24T12:51:00",
+    "end_time": "2017-12-24T12:52:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "ROC_cTemp",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "rpm",
+      "maf",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 24,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 12.217,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 0,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 24,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 12.231,
+      "eLoad": 0.0,
+      "maf": 0.0
+    },
+    "anomaly_count": 228
+  },
+  {
+    "alert_id": 104,
+    "device_id": 0,
+    "start_time": "2017-12-24T15:59:00",
+    "end_time": "2017-12-24T16:00:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "ROC_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 73,
+      "rpm": 1020.0,
+      "speed": 15,
+      "battery": 0.0,
+      "eLoad": 41.5686,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 73,
+      "rpm": 767.75,
+      "speed": 6,
+      "battery": 0.0,
+      "eLoad": 22.7451,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 76,
+      "rpm": 1185.75,
+      "speed": 18,
+      "battery": 0.0,
+      "eLoad": 79.2157,
+      "maf": 0.0
+    },
+    "anomaly_count": 101
+  },
+  {
+    "alert_id": 112,
+    "device_id": 5,
+    "start_time": "2017-12-31T08:44:00",
+    "end_time": "2017-12-31T08:45:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "PATTERN_ALTERNATOR",
+      "THRESHOLD_eLoad",
+      "THRESHOLD_maf",
+      "THRESHOLD_cTemp"
+    ],
+    "factors": [
+      "battery",
+      "maf",
+      "ALTERNATOR",
+      "eLoad",
+      "cTemp"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 42,
+      "rpm": 929.5,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 49.4118,
+      "maf": 10.92
+    },
+    "min_values": {
+      "cTemp": 41,
+      "rpm": 754.75,
+      "speed": 0,
+      "battery": 0.0,
+      "eLoad": 0.0,
+      "maf": 5.0
+    },
+    "max_values": {
+      "cTemp": 46,
+      "rpm": 2054.5,
+      "speed": 24,
+      "battery": 0.0,
+      "eLoad": 92.9412,
+      "maf": 20.11
+    },
+    "anomaly_count": 111
+  },
+  {
+    "alert_id": 114,
+    "device_id": 7,
+    "start_time": "2017-12-31T15:00:00",
+    "end_time": "2017-12-31T15:00:00",
+    "severity": "HIGH",
+    "issues": [
+      "THRESHOLD_battery",
+      "THRESHOLD_maf",
+      "THRESHOLD_rpm",
+      "THRESHOLD_cTemp",
+      "PATTERN_ENGINE"
+    ],
+    "factors": [
+      "battery",
+      "cTemp",
+      "maf",
+      "ENGINE",
+      "rpm"
+    ],
+    "sensor_snapshot": {
+      "cTemp": 32,
+      "rpm": 1155.0,
+      "speed": 0,
+      "battery": 14.76,
+      "eLoad": 26.6667,
+      "maf": 0.0
+    },
+    "min_values": {
+      "cTemp": 32,
+      "rpm": 0.0,
+      "speed": 0,
+      "battery": 10.54,
+      "eLoad": 21.9608,
+      "maf": 0.0
+    },
+    "max_values": {
+      "cTemp": 39,
+      "rpm": 1416.0,
+      "speed": 0,
+      "battery": 14.82,
+      "eLoad": 85.8824,
+      "maf": 0.0
+    },
+    "anomaly_count": 150
+  }
+]
