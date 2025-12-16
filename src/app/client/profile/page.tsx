@@ -6,7 +6,7 @@ import VehicleCard from '@/components/client/profile/VehicleCard';
 import ShopCard from '@/components/client/profile/ShopCard';
 import SettingsPanel from '@/components/client/profile/SettingsPanel';
 import SettingsMenu from '@/components/common/SettingsMenu';
-import { ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { ChevronLeftIcon, HomeIcon, ClockIcon, ChatBubbleLeftIcon, UserIcon, TruckIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 export default function ProfilePage() {
@@ -140,6 +140,32 @@ export default function ProfilePage() {
           />
         </section>
       </div>
+
+      {/* Bottom Navigation */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
+        <div className="flex justify-around items-center h-16 max-w-md mx-auto">
+          <Link href="/client/dashboard" className="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600">
+            <HomeIcon className="w-6 h-6" />
+            <span className="text-xs">Home</span>
+          </Link>
+          <Link href="/client/vehicles" className="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600">
+            <TruckIcon className="w-6 h-6" />
+            <span className="text-xs">Vehicles</span>
+          </Link>
+          <Link href="/client/appointments" className="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600">
+            <ClockIcon className="w-6 h-6" />
+            <span className="text-xs">Appointments</span>
+          </Link>
+          <Link href="/client/messages" className="flex flex-col items-center gap-1 text-gray-400 hover:text-gray-600">
+            <ChatBubbleLeftIcon className="w-6 h-6" />
+            <span className="text-xs">Messages</span>
+          </Link>
+          <Link href="/client/profile" className="flex flex-col items-center gap-1 text-[#4A2B83]">
+            <UserIcon className="w-6 h-6" />
+            <span className="text-xs font-medium">Profile</span>
+          </Link>
+        </div>
+      </nav>
     </div>
   );
 }
